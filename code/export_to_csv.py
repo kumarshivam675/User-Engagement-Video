@@ -32,3 +32,7 @@ for file in os.listdir(path):
                     timestamp_2 = str(feature['@timestamp'])
 
                 savetocsv.save(file, timestamp, pid, client_message, offset, timestamp_2)
+
+
+def test():
+    print "hello"
