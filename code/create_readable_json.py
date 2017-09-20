@@ -91,6 +91,21 @@ def check_if_video_log(client_msg):
     return "false"
 
 
+def count_unique_user():
+    email_list = []
+    for file in os.listdir(path):
+        if file != '.gitignore':
+            print file, len(email_list)
+            with open(path + file) as json_data:
+                d = json.load(json_data)
+
+            for feature in d:
+                if feature['email_id'] not in email_list:
+                    email_list.append(feature['email_id'])
+
+    print len(email_list)
+
+
 def extract_features():
     # d = load_json()
     file_count = 0
@@ -134,4 +149,5 @@ def extract_features():
     print count
 
 
-extract_features()
+# extract_features()
+count_unique_user()
