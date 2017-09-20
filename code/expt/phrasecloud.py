@@ -4,7 +4,8 @@ import os
 import datetime
 import matplotlib.pyplot as plt
 
-path = '/home/shivam/coursework/user engagement/User-Engagement-Video/code/'
+path = '/home/trisha/Desktop/Acad/Semester9/PE/User-Engagement-Video/code/'
+# path = '/home/shivam/coursework/user engagement/User-Engagement-Video/code/'
 file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
 
 
@@ -59,6 +60,7 @@ def plot_behaviour():
     Y = [x for _,x in sorted(zip(rowX, rowY))]
     plt.plot(X, Y,)
     plt.show()
+    plt.savefig('phrasecloud.png')
 
 
 plot_behaviour()
