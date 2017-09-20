@@ -2,8 +2,9 @@ import json
 import csv
 import savetocsv
 import os
+from config import project_folder
 
-path = '/home/shivam/coursework/user engagement/User-Engagement-Video/logdumps_organisationX/'
+path = project_folder + "logdumps_organisationX/"
 
 
 for file in os.listdir(path):

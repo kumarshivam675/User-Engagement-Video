@@ -2,9 +2,10 @@ import json
 import re
 import os
 import csv
+from config import project_folder
 
 
-path = '/home/shivam/coursework/user engagement/User-Engagement-Video/logdumps_organisationX/'
+path = project_folder + "logdumps_organisationX/"
 
 
 def load_json():
@@ -197,7 +198,7 @@ def create_json_user_wise():
     print count
 
 
-# extract_features()
+extract_features()
 # email_list = count_unique_user()
 # export_email_list_to_file(email_list)
-create_json_user_wise()
+# create_json_user_wise()

@@ -2,9 +2,9 @@ import json
 import csv
 import savetocsv
 import os
+from config import project_folder
 
-path = '/home/shivam/coursework/user engagement/User-Engagement-Video/code/result/'
-# file ='result_logdump_400000.json'
+path = project_folder + "code/result/"
 
 for file in os.listdir(path):
     with open(path + file, 'r') as data_file:

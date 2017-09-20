@@ -3,8 +3,9 @@ import csv
 import os
 import datetime
 import matplotlib.pyplot as plt
+from config import project_folder
 
-path = '/home/trisha/Desktop/Acad/Semester9/PE/User-Engagement-Video/code/'
+path = project_folder + "code/"
 # path = '/home/shivam/coursework/user engagement/User-Engagement-Video/code/'
 file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
 
