@@ -104,6 +104,16 @@ def count_unique_user():
                     email_list.append(feature['email_id'])
 
     print len(email_list)
+    return email_list
+
+
+def export_email_list_to_file(email_list):
+    for email in email_list:
+        hello = [[email]]
+
+        with open('email_list.csv', 'a') as testfile:     # append it data to the csv file
+            csv_writer = csv.writer(testfile)
+            csv_writer.writerow(hello[0])
 
 
 def extract_features():
@@ -145,9 +155,49 @@ def extract_features():
                         except:
                             print "issue in " + file + "  on line no " + str(count)
 
-            # json.dump(output, fp)
+    print count
+
+
+def create_json_user_wise():
+    file_count = 0
+    for file in os.listdir(path):
+        file_count += 1
+        print file_count
+        if file != ".gitignore":
+            print file
+            count = 0
+            with open(path + file) as json_data:
+                d = json.load(json_data)
+            for feature in d:
+                with open("./userdata/result_"+feature['email_id']+".json", 'a') as fp:
+                    count += 1
+                    try:
+                        data = {}
+                        # print feature['client_msg'].encode('utf-8').strip()
+
+                        data['email_id'] = feature['email_id']
+                        data['timestamp'] = feature['timestamp']
+                        data['@timestamp'] = feature['@timestamp']
+                        data['date'] = feature['@timestamp'].split("T")[0]
+                        data['time'] = feature['@timestamp'].split("T")[1][:-2]
+                        data['email_id'] = feature['email_id']
+                        data['offset'] = feature['offset']
+                        data['Course_Id'] = extract_course_id(feature['client_msg'].encode('utf-8').strip())
+                        data['Video_Id'] = extract_video_id(feature['client_msg'].encode('utf-8').strip())
+                        data['Kenlist_Id'] = extract_kenlist_id(feature['client_msg'].encode('utf-8').strip())
+                        data['time_in_seconds'] = extract_time_in_seconds(feature['client_msg'].encode('utf-8').strip())
+                        data['user_action'] = extract_user_action(feature['client_msg'].encode('utf-8').strip())
+                        data['video_log'] = check_if_video_log(feature['client_msg'].encode('utf-8').strip())
+
+                        json.dump(data, fp)
+                        fp.write('\n')
+                    except:
+                        print "issue in " + file + "  on line no " + str(count)
+
     print count
 
 
 # extract_features()
-count_unique_user()
+# email_list = count_unique_user()
+# export_email_list_to_file(email_list)
+create_json_user_wise()
