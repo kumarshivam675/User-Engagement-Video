@@ -86,6 +86,8 @@ def extract_user_action(client_msg):
 
 
 def check_if_video_log(client_msg):
+    if "quiz" in client_msg or "Quiz" in client_msg:
+        return "false"
     if "log:" in client_msg:
         return "true"
 
@@ -198,7 +200,7 @@ def create_json_user_wise():
     print count
 
 
-extract_features()
+# extract_features()
 # email_list = count_unique_user()
 # export_email_list_to_file(email_list)
-# create_json_user_wise()
+create_json_user_wise()
