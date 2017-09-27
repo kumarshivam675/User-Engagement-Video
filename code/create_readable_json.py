@@ -58,7 +58,7 @@ def extract_time_in_seconds(client_msg):
         if "at : " in  client_msg.split("kenlistID : ")[1]:
             time = re.sub("[^0-9.]", "", client_msg.split("kenlistID : ")[1].split(" : ")[1])
             if time[-1] == '.':
-                time = time[:-2]
+                time = time[:-1]
 
             return time
 

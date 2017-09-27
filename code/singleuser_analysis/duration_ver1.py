@@ -11,28 +11,32 @@ path = project_folder + "/code/"
 file1 = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
 
 videos = []
-def get_video():
-	with open( path + file1, 'r') as data_file:
-		for line in data_file.readlines():
-			data = json.loads(line)
-			if data['video_log'] == "true":
-				if data['Video_Id'] not in videos:
-					videos.append(data['Video_Id'])
 
-	return videos
+
+def get_video():
+    with open(path + file1, 'r') as data_file:
+        for line in data_file.readlines():
+            data = json.loads(line)
+            if data['video_log'] == "true":
+                if data['Video_Id'] not in videos:
+                    videos.append(data['Video_Id'])
+
+    return videos
+
 
 def get_video_duration(videos):
-	url = "https://www.youtube.com/watch?v="
-	for i in videos:
-		if i!='null':
-			print i
-			v = url + i.encode('utf-8').strip()
-			video = pafy.new(v)
-			videos_duration[i] = video.duration
-	return videos_duration
+    url = "https://www.youtube.com/watch?v="
+    for i in videos:
+        if i != 'null':
+            print i
+            v = url + i.encode('utf-8').strip()
+            video = pafy.new(v)
+            videos_duration[i] = video.duration
+    return videos_duration
+
 
 videos_access = []
-videos_access = get_video()					
+videos_access = get_video()
 print videos_access
 videos_duration = {}
 videos_duration = get_video_duration(videos_access)
