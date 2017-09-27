@@ -62,6 +62,9 @@ def extract_time_in_seconds(client_msg):
 
             return time
 
+    if "User playing time" in client_msg:
+        client_msg.split("User playing time")[1].split(":")
+
     return "null"
 
 
