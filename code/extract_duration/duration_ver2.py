@@ -34,16 +34,6 @@ def get_video(file):
     return videos
 
 
-def get_video_duration(videos):
-    url = "https://www.youtube.com/watch?v="
-    for i in videos:
-        if i != 'null':
-            v = url + i.encode('utf-8').strip()
-            video = pafy.new(v)
-            videos_duration[i] = video.duration
-    return videos_duration
-
-
 def get_log_single_video(video, email):
     # a = []
     date_wise = {}
