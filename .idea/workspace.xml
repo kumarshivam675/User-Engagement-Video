@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/singleuser_analysis/duration_ver1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/extract_duration/.duration_ver2.py.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_12e0cbf9e4bcdda88a9dd30ffba21920b1f9e4d9d8b328c0a7a992db.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_12e0cbf9e4bcdda88a9dd30ffba21920b1f9e4d9d8b328c0a7a992db.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_170170a54f3b2847a9a7641f2a1bc6a315a57fae3e03e92510c37815.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_170170a54f3b2847a9a7641f2a1bc6a315a57fae3e03e92510c37815.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_45f75d374408678e84ab86932ce563e4825edd6ab2f5ad574e771fe3.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_45f75d374408678e84ab86932ce563e4825edd6ab2f5ad574e771fe3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_566499e48e93ffc64c91fba43ed8d5dee8622150041b9072f0650447.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_566499e48e93ffc64c91fba43ed8d5dee8622150041b9072f0650447.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7a61cdfee6a67b0bd76872b90d2337395eb5cdff167048df984ee86e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7a61cdfee6a67b0bd76872b90d2337395eb5cdff167048df984ee86e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7a82e505da30d9d4710d4d2d10e7fcab2f43a30377f322cd99abe0c8.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7a82e505da30d9d4710d4d2d10e7fcab2f43a30377f322cd99abe0c8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8a9fac52cb9797b8e3b10f65cdba22b68c61522d6da7ba30af7c1531.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8a9fac52cb9797b8e3b10f65cdba22b68c61522d6da7ba30af7c1531.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e022a18c052c2cd76e2bef90940527340bc62bf7aebb6f64bb51580.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e022a18c052c2cd76e2bef90940527340bc62bf7aebb6f64bb51580.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_94046de36bd3dc65db33303b55fb1953daa6b5f8bdf5824b2186c22e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_94046de36bd3dc65db33303b55fb1953daa6b5f8bdf5824b2186c22e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9bb09a90c49cab2949e7315fe2d95216f8a1aa5267012ac49d89f0fd.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9bb09a90c49cab2949e7315fe2d95216f8a1aa5267012ac49d89f0fd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9db9c3e9d33364b57be6ad1f5707c011e76a26bfe15e653cf8d8d189.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9db9c3e9d33364b57be6ad1f5707c011e76a26bfe15e653cf8d8d189.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a66d5ce9551f2d6317f67518c4c7b7fd7db874809675a1bd79210c29.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a66d5ce9551f2d6317f67518c4c7b7fd7db874809675a1bd79210c29.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b9b0bbe94293b518132a04c02efe865c5ce44865b710f7400b1bd820.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b9b0bbe94293b518132a04c02efe865c5ce44865b710f7400b1bd820.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bfa905f19f199d0b3395fb84094098a9e5812f2ea1b3fe287e189c91.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bfa905f19f199d0b3395fb84094098a9e5812f2ea1b3fe287e189c91.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c013a74cfc3a9f218ad0e9d8e006781f9211b34d775675cc7c84660f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c013a74cfc3a9f218ad0e9d8e006781f9211b34d775675cc7c84660f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c4d6f3e917fd68e958cf77cfc7daf9ddb253c414bfd192d1c6c9283b.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c4d6f3e917fd68e958cf77cfc7daf9ddb253c414bfd192d1c6c9283b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e7ad1a5b858a9724d9c74dce95698c84aa8e910397e87c50a6f90614.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e7ad1a5b858a9724d9c74dce95698c84aa8e910397e87c50a6f90614.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_eeae8697f09de95f5a7e9f302c8ef07079ad07243e40d52fdade3a35.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_eeae8697f09de95f5a7e9f302c8ef07079ad07243e40d52fdade3a35.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f4adb9b9bcb8c4fee1738628e738f6c2571a85ccfa26104459645b37.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f4adb9b9bcb8c4fee1738628e738f6c2571a85ccfa26104459645b37.json" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,8 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,30 +177,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="singleuser_analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User-Engagement-Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User-Engagement-Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="extract_duration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,12 +195,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/dump" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/extract_duration" />
       <recent name="$PROJECT_DIR$/code/user_data_test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/dump" />
     </key>
   </component>
   <component name="RunManager" selected="Python.export_to_csv">
@@ -520,7 +521,7 @@
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29561752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3003984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,22 +559,36 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/leaderboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/uniquevideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/create_readable_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#152#253#0" expanded="false" />
-            <element signature="e#295#532#0" expanded="false" />
-            <element signature="e#573#959#0" expanded="false" />
-            <element signature="e#1002#1416#0" expanded="false" />
-            <element signature="e#1464#1861#0" expanded="false" />
-            <element signature="e#1905#2694#0" expanded="false" />
-            <element signature="e#2737#2879#0" expanded="false" />
-            <element signature="e#2911#3320#0" expanded="false" />
-            <element signature="e#3370#3600#0" expanded="false" />
-            <element signature="e#3631#5805#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,9 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding>
-            <element signature="e#511#647#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/uniquevideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09152542">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/user_data_test/result_0b552e6f8e38473f3a567b7d597b33e1ece3b2e14f215949028f9d0f.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -722,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13989638">
           <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/leaderboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85423726">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -778,9 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding>
-            <element signature="e#511#647#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030508475">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,9 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36610168">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,18 +811,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7813559">
           <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/leaderboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030508475">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/singleuser_analysis/uniquevideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030508475">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
-            <element signature="e#152#253#0" expanded="false" />
-            <element signature="e#295#532#0" expanded="false" />
-            <element signature="e#573#959#0" expanded="false" />
-            <element signature="e#1002#1416#0" expanded="false" />
-            <element signature="e#1464#1861#0" expanded="false" />
-            <element signature="e#1905#2694#0" expanded="false" />
-            <element signature="e#2737#2879#0" expanded="false" />
-            <element signature="e#2911#3320#0" expanded="false" />
-            <element signature="e#3370#3600#0" expanded="false" />
-            <element signature="e#3631#5805#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6915255">
+          <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
