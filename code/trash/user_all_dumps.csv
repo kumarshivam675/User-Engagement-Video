@@ -1,8 +1,0 @@
-"[msg: 'details of the session', session_id: '5982']"
-"[playlist_id: '4421', content_id: '85115', msg: 'User is on content show page']"
-"[log: 'Client log', msg: 'Youtube video is buffering  content_id : 85115 : of unit :  : of Course : 3356 : video id  : d4F9jvMBk0Y : kenlistID : 4421 at : 0 seconds.']"
-"[msg: 'Assignments of the sessions', session_id: '5982']"
-"[playlist_id: '4421', content_id: '85115', msg: 'User is on content show page']"
-"[msg: 'phrase cloud for the video', youtube_id: 'd4F9jvMBk0Y']"
-"[log: 'Client log', msg: 'Youtube video is buffering  content_id : 85117 : of unit :  : of Course : 3356 : video id  : RMjtmsr3CqA : kenlistID : 4421 at : 0 seconds.']"
-"[log: 'Client log', msg: 'User is playing content_id : 86021 : of unit :  : of Course : 3378 : video : PWm2-4iAOIY : kenlistID : 4498 at : 21.556913980926513 seconds.']"
