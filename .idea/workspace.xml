@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/combine_features/combine.py" afterPath="$PROJECT_DIR$/code/combine_features/combine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
@@ -71,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="45" selection-start-line="51" selection-start-column="4" selection-end-line="59" selection-end-column="45" />
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -82,8 +84,8 @@
       <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7627119">
-              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8169491">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="e#282#449#0" expanded="false" />
               </folding>
@@ -966,7 +968,7 @@
     <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="45" selection-start-line="51" selection-start-column="4" selection-end-line="59" selection-end-column="45" />
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -975,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7627119">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.8169491">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="e#282#449#0" expanded="false" />
           </folding>

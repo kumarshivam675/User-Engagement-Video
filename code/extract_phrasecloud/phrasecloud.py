@@ -22,18 +22,21 @@ def extract_week_number(raw_date):
 def create_phrasecloud_dictionary(min_week, max_week):
     phrase_cloud_clicks = {}
     for i in range(min_week, max_week + 1):
-        phrase_cloud_clicks[i] = 0
+        phrase_cloud_clicks[i] = 0.0
 
     return phrase_cloud_clicks
 
 
 def extract_phrasecloud_clicks():
+    print "phrase cloud"
     # main_db = []
     user_log = {}
     count = 0
     for file in os.listdir(path):
         count += 1
         print count
+        # if count > 100:
+        #     break
         if file != ".gitignore":
             phrase_cloud_clicks = create_phrasecloud_dictionary(18, 37)
             with open(path + file, 'r') as data_file:
@@ -45,7 +48,7 @@ def extract_phrasecloud_clicks():
                         if week_number in phrase_cloud_clicks:
                             phrase_cloud_clicks[week_number] += 1
                         else:
-                            phrase_cloud_clicks[week_number] = 1
+                            phrase_cloud_clicks[week_number] = 1.0
 
                 user_log[file.split("_")[1].split(".")[0]] = phrase_cloud_clicks
 
