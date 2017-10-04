@@ -2,7 +2,7 @@ import json
 import re
 import os
 import csv
-from config import project_folder
+from code.config import project_folder
 
 
 path = project_folder + "logdumps_organisationX/"
@@ -175,7 +175,7 @@ def create_json_user_wise():
             with open(path + file) as json_data:
                 d = json.load(json_data)
             for feature in d:
-                with open("./userdata/result_"+feature['email_id']+".json", 'a') as fp:
+                with open(path + "code/userdata/result_" + feature['email_id']+".json", 'a') as fp:
                     count += 1
                     try:
                         data = {}

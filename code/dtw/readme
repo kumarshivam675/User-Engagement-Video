@@ -1,0 +1,22 @@
+experiment.py
+    - DTW experiment file. Not Important
+
+dtw_exp.py
+    - Run Kmeans clustering using DTW distance.
+    - Input is from a csv file
+    - Code throws error if none of the data points are clustered into a given cluster.
+
+- test.csv, train.csv
+    - sample csv files. Not Important
+
+- duration.csv
+    - csv file which stores average video duration data for 240 users over 20 weeks.
+
+- phrase_cloud_user.csv
+    - csv file which stores phrase cloud click data for 240 users over 20 weeks.
+
+- duration_cluster
+    - png files to visualize the duration based cluster plot
+
+- phrase_cloud_cluster
+    - png files to visualize the phrase cloud click based cluster plot

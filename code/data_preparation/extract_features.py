@@ -2,7 +2,7 @@ import json
 import csv
 import savetocsv
 import os
-from config import project_folder
+from code.config import project_folder
 
 path = project_folder + "code/result/"
 

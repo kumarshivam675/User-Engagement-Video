@@ -1,0 +1,15 @@
+create_readable_json.py
+    - Read files from "logdumps_organisationX" directory and creates json files in "userdata" directory
+    - create_json_user_wise() function does the job.
+
+email_list.csv
+    - List of all the unique email id's in the given data
+
+export_to_csv.py
+    - export the data into csv file for better visualization
+
+extract_features.py
+    - experimentation file. Not important
+
+savetocsv.py
+    - template to save data to csv files

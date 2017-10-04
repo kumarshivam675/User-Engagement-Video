@@ -53,62 +53,59 @@ def get_summary(user_summary):
 
 
 def save(data):
-        details = [data]
-        with open('video_duration_user.csv', 'a') as testfile:     # append it data to the csv file
-                csv_writer = csv.writer(testfile)
-                csv_writer.writerow(details[0])
-
+    details = [data]
+    with open('video_duration_user.csv', 'a') as testfile:  # append it data to the csv file
+        csv_writer = csv.writer(testfile)
+        csv_writer.writerow(details[0])
 
 
 def create_video_log():
-	result = []
+    result = []
     # for file in ['result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json']:
 
-    	count = 0
-    	user_summary = create_unique_video_dictionary(18,37)
-    	for file in os.listdir(path):
-		print file
-		count += 1
-		if count > 240:
-			break
-		with open(path + file, 'r') as data_file: 
-			for line in data_file.readlines():
-        			data = json.loads(line)
-        			week = data['week']
-				email = data['email_id']
-				video = data['Video_Id']
-				duration = data['duration']
-				length = data['video_length']
-				user_summary = add_to_dict(week, email, video, duration, length, user_summary)
-			
-		user_summary_2 = get_summary(user_summary)
+    count = 0
+    user_summary = create_unique_video_dictionary(18, 37)
+    for file in os.listdir(path):
+        print file
+        count += 1
+        if count > 240:
+            break
+        with open(path + file, 'r') as data_file:
+            for line in data_file.readlines():
+                data = json.loads(line)
+                week = data['week']
+                email = data['email_id']
+                video = data['Video_Id']
+                duration = data['duration']
+                length = data['video_length']
+                user_summary = add_to_dict(week, email, video, duration, length, user_summary)
 
-		keys = user_summary_2.keys()
-		values = user_summary_2.values()
+        user_summary_2 = get_summary(user_summary)
 
-		Z1 = sorted(keys)
-		Z2 = [x for _, x in sorted(zip(keys, values))]
-	
-		result.append(Z2)
-		
-   	
-	for i in result:
-		plt.plot(Z1, i)
-	plt.savefig('videoduration.png')
-	plt.show()
-	'''
-	for i in result:
-		print i
-	'''
-	for i in result:
-        	save(i)
+        keys = user_summary_2.keys()
+        values = user_summary_2.values()
 
-        
+        Z1 = sorted(keys)
+        Z2 = [x for _, x in sorted(zip(keys, values))]
+
+        result.append(Z2)
+
+    for i in result:
+        plt.plot(Z1, i)
+    plt.savefig('videoduration.png')
+    plt.show()
+    '''
+    for i in result:
+        print i
+    '''
+    for i in result:
+        save(i)
+
+
     print Z1
     for i in result:
         plt.plot(Z1, i)
     plt.savefig('videoduration.png')
     plt.show()
-
 
 create_video_log()
