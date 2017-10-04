@@ -4,6 +4,7 @@ import os
 import datetime
 import matplotlib.pyplot as plt
 import pafy
+import time, datetime
 # from config import project_folder
 project_folder = "/home/shivam/coursework/user engagement/User-Engagement-Video/"
 path = project_folder + "code/userdata/"
@@ -34,14 +35,23 @@ def get_video(file):
     return videos
 
 
-def get_video_duration(videos):
-    url = "https://www.youtube.com/watch?v="
-    for i in videos:
-        if i != 'null':
-            v = url + i.encode('utf-8').strip()
-            video = pafy.new(v)
-            videos_duration[i] = video.duration
-    return videos_duration
+def get_video_duration():
+	f = open('video_duration.csv', 'r')
+	videos_on_youtube = []
+	videos_duration = []
+	with f:
+    		reader = csv.DictReader(f)
+    		for row in reader:
+            		videos_on_youtube.append(row['video_id'])
+			videos_duration.append(row['duration'])
+	videos_duration_seconds = []
+	for i in videos_duration:
+		a = time.strptime("00:11:06", "%H:%M:%S")
+		b = datetime.timedelta(hours=a.tm_hour, minutes=a.tm_min, seconds=a.tm_sec).seconds
+		videos_duration_seconds.append(b)
+	dictionary = dict(zip(videos_on_youtube, videos_duration_seconds))	
+	return dictionary
+			
 
 
 def get_log_single_video(video, email):
@@ -110,19 +120,21 @@ def extract_watch_duration(video, length):
 
 def get_log_user(video_access, email): #list of all videos of a given user
     json_object = []
+    video_dict = get_video_duration()
     for video in video_access:
-        video_length = 30
-        single_video = get_log_single_video(video, email)
-        date_wise_duration = extract_watch_duration(single_video, video_length)
-        for date in date_wise_duration:
-            data = {}
-            data['Video_Id'] = video
-            data['email_id'] = email
-            data['date'] = date
-            data['week'] = extract_week_number(date)
-            data['duration'] = date_wise_duration[date]
-            data['video_length'] = video_length
-            json_object.append(data)
+	if video in video_dict:
+        	video_length = video_dict[video]
+        	single_video = get_log_single_video(video, email)
+        	date_wise_duration = extract_watch_duration(single_video, video_length)
+        	for date in date_wise_duration:
+            		data = {}
+            		data['Video_Id'] = video
+            		data['email_id'] = email
+            		data['date'] = date
+            		data['week'] = extract_week_number(date)
+            		data['duration'] = date_wise_duration[date]
+            		data['video_length'] = video_length
+            		json_object.append(data)
 
     with open("./uservideodata/video_" + email + ".json", 'a') as fp:
         for data in json_object:
