@@ -5,7 +5,8 @@ import datetime
 import matplotlib.pyplot as plt
 from config import project_folder
 
-path = project_folder + "/code/extract_uniquevideo/user_data_test/"
+path = project_folder + "code/extract_uniquevideo/user_data_test/"
+
 
 def extract_week_number(raw_date):
     year = raw_date[:4]
@@ -15,11 +16,13 @@ def extract_week_number(raw_date):
     wk = dt.isocalendar()[1]
     return wk
 
+
 def create_unique_video_dictionary(min_week, max_week):
     temp_dict = {}
     for i in range(min_week, max_week + 1):
         temp_dict[i] = []
     return temp_dict
+
 
 def save(data):
         details = [data]

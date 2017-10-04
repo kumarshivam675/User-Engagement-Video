@@ -3,9 +3,9 @@ import csv
 import os
 import datetime
 import matplotlib.pyplot as plt
-# from config import project_folder
+from config import project_folder
 
-project_folder = "/home/shivam/coursework/user engagement/User-Engagement-Video/"
+# project_folder = "/home/shivam/coursework/user engagement/User-Engagement-Video/"
 path = project_folder + "code/userdata/"
 
 
