@@ -21,20 +21,22 @@ def extract_week_number(raw_date):
 def create_mmtoc_dictionary(min_week, max_week):
     phrase_cloud_clicks = {}
     for i in range(min_week, max_week + 1):
-        phrase_cloud_clicks[i] = []
+        phrase_cloud_clicks[i] = 0
 
     return phrase_cloud_clicks
 
 
 def extract_mmtoc_clicks():
     main_db = []
-    mmtoc_clicks = create_mmtoc_dictionary(18, 37)
+    user_log = {}
     count = 0
     for file in os.listdir(path):
+        mmtoc_clicks = create_mmtoc_dictionary(18, 37)
         count += 1
-        if count > 50:
-            break
-        print file
+        print count
+        # if count > 50:
+        #     break
+        # print file
         if file != ".gitginore":
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
@@ -43,38 +45,34 @@ def extract_mmtoc_clicks():
                     if data['user_action'] != None and "mmtoc" in data['user_action']:
                         week_number = extract_week_number(data['date'])
                         if week_number in mmtoc_clicks:
-                            mmtoc_clicks[week_number].append(data['Video_Id'])
+                            mmtoc_clicks[week_number] += 1
                         else:
-                            mmtoc_clicks[week_number] = [data['Video_Id']]
+                            mmtoc_clicks[week_number] = 1
 
-                temp_values = []
-                for key in mmtoc_clicks:
-                    temp_values.append(len(mmtoc_clicks[key]))
-                main_db.append(temp_values)
+                # temp_values = []
+                # for key in mmtoc_clicks:
+                #     temp_values.append(len(mmtoc_clicks[key]))
+                # main_db.append(temp_values)
+                user_log[file.split("_")[1].split(".")[0]] = mmtoc_clicks
 
-    return main_db
+    return user_log
 
 
-def plot_behaviour():
-    phrase_cloud_clicks = extract_mmtoc_clicks()
-    rowX = []
+def mmtocplot_behaviour():
+    mmtoc_clicks = extract_mmtoc_clicks()
 
-    for i in range(18, 37):
-        rowX.append(i)
+    for user in mmtoc_clicks:
+        # print user
+        keys = mmtoc_clicks[user].keys()
+        values = mmtoc_clicks[user].values()
 
-    X = sorted(rowX)
-    copy = []
-    for i in phrase_cloud_clicks:
-        tmp = [x for _, x in sorted(zip(rowX, i))]
-        copy.append(tmp)
+        Z1 = sorted(keys)
+        Z2 = [x for _, x in sorted(zip(keys, values))]
+        plt.plot(Z1, Z2)
 
-    print len(copy[0]), len(X)
-    for i in copy:
-        # save(i)
-        plt.plot(X, i)
-    plt.savefig('phrasecloud.png')
+    plt.savefig("mmtoc.png")
     plt.show()
 
 
 # extract_mmtoc_clicks()
-plot_behaviour()
+mmtocplot_behaviour()

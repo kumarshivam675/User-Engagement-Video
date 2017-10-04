@@ -60,30 +60,39 @@ def save(data):
 
 
 def create_video_log():
-    result = []
     # for file in ['result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json']:
-
     count = 0
+    user_log = {}
     user_summary = create_unique_video_dictionary(18, 37)
     for file in os.listdir(path):
-        print file
-        count += 1
-        if count > 240:
-            break
-        with open(path + file, 'r') as data_file:
-            for line in data_file.readlines():
-                data = json.loads(line)
-                week = data['week']
-                email = data['email_id']
-                video = data['Video_Id']
-                duration = data['duration']
-                length = data['video_length']
-                user_summary = add_to_dict(week, email, video, duration, length, user_summary)
+        if file != ".gitignore":
+            print file
+            count += 1
+            if count > 240:
+                break
+            with open(path + file, 'r') as data_file:
+                for line in data_file.readlines():
+                    data = json.loads(line)
+                    week = data['week']
+                    email = data['email_id']
+                    video = data['Video_Id']
+                    duration = data['duration']
+                    length = data['video_length']
+                    user_summary = add_to_dict(week, email, video, duration, length, user_summary)
 
-        user_summary_2 = get_summary(user_summary)
+            user_summary_week_wise = get_summary(user_summary)
 
-        keys = user_summary_2.keys()
-        values = user_summary_2.values()
+            user_log[file.split("_")[1].split(".")[0]] = user_summary_week_wise
+
+    return user_log
+
+
+def plot():
+    result = []
+    user_log = create_video_log()
+    for user_summary_week_wise in user_log:
+        keys = user_log[user_summary_week_wise].keys()
+        values = user_log[user_summary_week_wise].values()
 
         Z1 = sorted(keys)
         Z2 = [x for _, x in sorted(zip(keys, values))]
@@ -92,20 +101,10 @@ def create_video_log():
 
     for i in result:
         plt.plot(Z1, i)
-    plt.savefig('videoduration.png')
-    plt.show()
-    '''
-    for i in result:
-        print i
-    '''
-    for i in result:
-        save(i)
-
-
-    print Z1
-    for i in result:
-        plt.plot(Z1, i)
+        # save(i)
     plt.savefig('videoduration.png')
     plt.show()
 
-create_video_log()
+
+# create_video_log()
+plot()

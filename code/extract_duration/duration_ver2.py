@@ -49,7 +49,7 @@ def get_video_duration():
             videos_duration.append(row['duration'])
     videos_duration_seconds = []
     for i in videos_duration:
-        a = time.strptime("00:11:06", "%H:%M:%S")
+        a = time.strptime(i, "%H:%M:%S")
         b = datetime.timedelta(hours=a.tm_hour, minutes=a.tm_min, seconds=a.tm_sec).seconds
         videos_duration_seconds.append(b)
     dictionary = dict(zip(videos_on_youtube, videos_duration_seconds))

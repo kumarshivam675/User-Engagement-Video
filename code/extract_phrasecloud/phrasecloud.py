@@ -3,9 +3,11 @@ import csv
 import os
 import datetime
 import matplotlib.pyplot as plt
-from config import project_folder
+# from config import project_folder
 
-path = project_folder + "/code/extract_phrasecloud/user_data_test/"
+project_folder = "/home/shivam/coursework/user engagement/User-Engagement-Video"
+# path = project_folder + "/code/extract_phrasecloud/user_data_test/"
+path = project_folder + "/code/userdata/"
 
 
 def extract_week_number(raw_date):
@@ -20,32 +22,38 @@ def extract_week_number(raw_date):
 def create_phrasecloud_dictionary(min_week, max_week):
     phrase_cloud_clicks = {}
     for i in range(min_week, max_week + 1):
-        phrase_cloud_clicks[i] = []
+        phrase_cloud_clicks[i] = 0
 
     return phrase_cloud_clicks
 
 
 def extract_phrasecloud_clicks():
-    main_db = []
-    phrase_cloud_clicks = create_phrasecloud_dictionary(18, 37)
+    # main_db = []
+    user_log = {}
+    count = 0
     for file in os.listdir(path):
+        count += 1
+        print count
         if file != ".gitignore":
+            phrase_cloud_clicks = create_phrasecloud_dictionary(18, 37)
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
                     data = json.loads(line)
 
                     if data['user_action'] != None and "phrase" in data['user_action']:
-
                         week_number = extract_week_number(data['date'])
                         if week_number in phrase_cloud_clicks:
-                            phrase_cloud_clicks[week_number].append(data['Video_Id'])
+                            phrase_cloud_clicks[week_number] += 1
                         else:
-                            phrase_cloud_clicks[week_number] = [data['Video_Id']]
-                temp_values = []
-                for key in phrase_cloud_clicks:
-                    temp_values.append(len(phrase_cloud_clicks[key]))
-                main_db.append(temp_values)
-    return main_db
+                            phrase_cloud_clicks[week_number] = 1
+                # temp_values = []
+                # for key in phrase_cloud_clicks:
+                #     temp_values.append(len(phrase_cloud_clicks[key]))
+                # main_db.append(temp_values)
+                # print phrase_cloud_clicks
+                user_log[file.split("_")[1].split(".")[0]] = phrase_cloud_clicks
+    # print user_log
+    return user_log
 
 
 def save(data):
@@ -58,23 +66,18 @@ def save(data):
 def plot_behaviour():
     phrase_cloud_clicks = extract_phrasecloud_clicks()
 
-    rowX = []
+    for user in phrase_cloud_clicks:
+        # print user
+        keys = phrase_cloud_clicks[user].keys()
+        values = phrase_cloud_clicks[user].values()
 
-    for i in range(18, 37):
-        rowX.append(i)
+        Z1 = sorted(keys)
+        # print Z1
+        Z2 = [x for _, x in sorted(zip(keys, values))]
+        save(Z2)
+        plt.plot(Z1, Z2)
 
-    X = sorted(rowX)
-
-    copy = []
-    for i in phrase_cloud_clicks:
-        tmp = [x for _, x in sorted(zip(rowX, i))]
-        copy.append(tmp)
-
-    print len(copy[0]), len(X)
-    for i in copy:
-        save(i)
-        plt.plot(X, i)
-    plt.savefig('phrasecloud.png')
+    plt.savefig("phrasecloud.png")
     plt.show()
 
 

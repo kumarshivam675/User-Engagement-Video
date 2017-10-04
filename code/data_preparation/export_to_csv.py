@@ -2,7 +2,7 @@ import json
 import os
 
 import savetocsv
-from code.config import project_folder
+from config import project_folder
 
 path = project_folder + "logdumps_organisationX/"
 
