@@ -5,9 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 from config import project_folder
 
-path = project_folder + "/code/user_data_test/"
-file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
-
+path = project_folder + "/code/extract_phrasecloud/user_data_test/"
 
 def extract_week_number(raw_date):
     year = raw_date[:4]
