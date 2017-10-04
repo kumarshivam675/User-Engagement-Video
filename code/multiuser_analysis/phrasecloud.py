@@ -5,7 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 from config import project_folder
 
-path = project_folder + "code/user_data_test/"
+path = project_folder + "/code/user_data_test/"
 file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
 
 
@@ -28,13 +28,15 @@ def create_phrasecloud_dictionary(min_week, max_week):
 
 def extract_phrasecloud_clicks():
     main_db = []
-    phrase_cloud_clicks = create_phrasecloud_dictionary(18, 45)
+    phrase_cloud_clicks = create_phrasecloud_dictionary(18, 37)
     for file in os.listdir(path):
         if file != ".gitignore":
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
                     data = json.loads(line)
-                    if "phrase" in data['user_action']:
+		    
+                    if data['user_action']!=None and "phrase" in data['user_action']:
+			
                         week_number = extract_week_number(data['date'])
                         if week_number in phrase_cloud_clicks:
                             phrase_cloud_clicks[week_number].append(data['Video_Id'])
@@ -46,18 +48,22 @@ def extract_phrasecloud_clicks():
                 main_db.append(temp_values)
     return main_db
 
+def save(data):
+        details = [data]
+        with open('phrase_cloud_user.csv', 'a') as testfile:     # append it data to the csv file
+                csv_writer = csv.writer(testfile)
+                csv_writer.writerow(details[0])
 
 def plot_behaviour():
     phrase_cloud_clicks = extract_phrasecloud_clicks()
-    print phrase_cloud_clicks
+  
     rowX = []
 
-    for i in range(18, 45):
+    for i in range(18, 37):
         rowX.append(i)
 
     X = sorted(rowX)
-    print '-------------------------------------------------------'
-    print X
+   
     copy = []
     for i in phrase_cloud_clicks:
         tmp = []
@@ -66,7 +72,7 @@ def plot_behaviour():
 
     print len(copy[0]), len(X)
     for i in copy:
-        print 'yes'
+	save(i)
         plt.plot(X, i)
     plt.savefig('phrasecloud.png')
     plt.show()
