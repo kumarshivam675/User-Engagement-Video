@@ -46,13 +46,19 @@ def extract_phrasecloud_clicks():
                             phrase_cloud_clicks[week_number] += 1
                         else:
                             phrase_cloud_clicks[week_number] = 1
-                # temp_values = []
-                # for key in phrase_cloud_clicks:
-                #     temp_values.append(len(phrase_cloud_clicks[key]))
-                # main_db.append(temp_values)
-                # print phrase_cloud_clicks
+
                 user_log[file.split("_")[1].split(".")[0]] = phrase_cloud_clicks
-    # print user_log
+
+    max_click = 0
+    for user in user_log:
+        for week in user_log[user]:
+            if user_log[user][week] > max_click:
+                max_click = user_log[user][week]
+
+    for user in user_log:
+        for week in user_log[user]:
+            user_log[user][week] /= max_click
+
     return user_log
 
 
@@ -81,4 +87,4 @@ def plot_behaviour():
     plt.show()
 
 
-plot_behaviour()
+# plot_behaviour()
