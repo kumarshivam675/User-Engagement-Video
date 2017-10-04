@@ -1,0 +1,5 @@
+input = user_data_test (contains a subset of files from userdata flder in code/)
+
+output = (This part is getting some errors. => NEEDs FIXING)
+1. uniquevideo.png patterns for all user files in user_data_test
+2. unique_video_user.csv => csv prepared for all users in user_data_test for dtw clustering input

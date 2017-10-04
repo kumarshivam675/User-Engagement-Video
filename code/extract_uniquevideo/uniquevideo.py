@@ -5,10 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 from config import project_folder
 
-path = project_folder + "code/user_data_test/"
-
-
-# file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
+path = project_folder + "/code/extract_uniquevideo/user_data_test/"
 
 def extract_week_number(raw_date):
     year = raw_date[:4]
@@ -18,26 +15,20 @@ def extract_week_number(raw_date):
     wk = dt.isocalendar()[1]
     return wk
 
-
-'''
-with open(path + file, 'r') as data_file:
-	for line in data_file.readlines():
-        	data = json.loads(line)
-		print data
-		break	
-'''
-
-
 def create_unique_video_dictionary(min_week, max_week):
     temp_dict = {}
     for i in range(min_week, max_week + 1):
         temp_dict[i] = []
     return temp_dict
 
-
+def save(data):
+        details = [data]
+        with open('unique_video_user.csv', 'a') as testfile:     # append it data to the csv file
+                csv_writer = csv.writer(testfile)
+                csv_writer.writerow(details[0])
 store_week_number = []
 main_db_unique_video = []
-week_unique_video = create_unique_video_dictionary(20, 37)
+week_unique_video = create_unique_video_dictionary(18, 37)
 
 for file in os.listdir(path):
     if file != '.gitignore':
@@ -74,6 +65,7 @@ for i in main_db_unique_video:
 
 # print copy
 for i in copy:
+    save(i)
     plt.plot(Z1, i)
 plt.savefig('uniquevideo.png')
 plt.show()

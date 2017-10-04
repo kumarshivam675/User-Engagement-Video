@@ -1,0 +1,5 @@
+input = user_data_test (contains a subset of files from userdata flder in code/)
+
+output = 
+1. phrasecloud.png patterns for all user files in user_data_test
+2. phrase_cloud_user.csv => csv prepared for all users in user_data_test for dtw clustering input
