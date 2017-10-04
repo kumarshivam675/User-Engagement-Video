@@ -3,9 +3,10 @@ import csv
 import os
 import datetime
 import matplotlib.pyplot as plt
-from config import project_folder
+# from config import project_folder
 
-path = project_folder + "/code/extract_phrasecloud/user_data_test/"
+project_folder = "/home/shivam/coursework/user engagement/User-Engagement-Video/"
+path = project_folder + "code/userdata/"
 
 
 def extract_week_number(raw_date):
@@ -17,7 +18,7 @@ def extract_week_number(raw_date):
     return wk
 
 
-def create_phrasecloud_dictionary(min_week, max_week):
+def create_mmtoc_dictionary(min_week, max_week):
     phrase_cloud_clicks = {}
     for i in range(min_week, max_week + 1):
         phrase_cloud_clicks[i] = []
@@ -25,46 +26,43 @@ def create_phrasecloud_dictionary(min_week, max_week):
     return phrase_cloud_clicks
 
 
-def extract_phrasecloud_clicks():
+def extract_mmtoc_clicks():
     main_db = []
-    phrase_cloud_clicks = create_phrasecloud_dictionary(18, 37)
+    mmtoc_clicks = create_mmtoc_dictionary(18, 37)
+    count = 0
     for file in os.listdir(path):
-        if file != ".gitignore":
+        count += 1
+        if count > 50:
+            break
+        print file
+        if file != ".gitginore":
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
                     data = json.loads(line)
 
-                    if data['user_action'] != None and "phrase" in data['user_action']:
-
+                    if data['user_action'] != None and "mmtoc" in data['user_action']:
                         week_number = extract_week_number(data['date'])
-                        if week_number in phrase_cloud_clicks:
-                            phrase_cloud_clicks[week_number].append(data['Video_Id'])
+                        if week_number in mmtoc_clicks:
+                            mmtoc_clicks[week_number].append(data['Video_Id'])
                         else:
-                            phrase_cloud_clicks[week_number] = [data['Video_Id']]
+                            mmtoc_clicks[week_number] = [data['Video_Id']]
+
                 temp_values = []
-                for key in phrase_cloud_clicks:
-                    temp_values.append(len(phrase_cloud_clicks[key]))
+                for key in mmtoc_clicks:
+                    temp_values.append(len(mmtoc_clicks[key]))
                 main_db.append(temp_values)
+
     return main_db
 
 
-def save(data):
-    details = [data]
-    with open('phrase_cloud_user.csv', 'a') as testfile:  # append it data to the csv file
-        csv_writer = csv.writer(testfile)
-        csv_writer.writerow(details[0])
-
-
 def plot_behaviour():
-    phrase_cloud_clicks = extract_phrasecloud_clicks()
-
+    phrase_cloud_clicks = extract_mmtoc_clicks()
     rowX = []
 
     for i in range(18, 37):
         rowX.append(i)
 
     X = sorted(rowX)
-
     copy = []
     for i in phrase_cloud_clicks:
         tmp = [x for _, x in sorted(zip(rowX, i))]
@@ -72,10 +70,11 @@ def plot_behaviour():
 
     print len(copy[0]), len(X)
     for i in copy:
-        save(i)
+        # save(i)
         plt.plot(X, i)
     plt.savefig('phrasecloud.png')
     plt.show()
 
 
+# extract_mmtoc_clicks()
 plot_behaviour()

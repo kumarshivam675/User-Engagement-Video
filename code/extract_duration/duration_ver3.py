@@ -4,10 +4,10 @@ import os
 import datetime
 import matplotlib.pyplot as plt
 import pafy
-from config import project_folder
+#from config import project_folder
 import time, datetime
 
-# project_folder = '/home/trisha/Desktop/Acad/Semester9/PE/User-Engagement-Video'
+project_folder = '/home/shivam/coursework/user engagement/User-Engagement-Video'
 path = project_folder + "/code/extract_duration/uservideodata/"
 
 
