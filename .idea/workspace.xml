@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py" afterPath="$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,6 +32,7 @@
     <SUITE FILE_PATH="coverage/User-Engagement-Video$read_json.coverage" NAME="read_json Coverage Results" MODIFIED="1505419397640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$create_readable_json.coverage" NAME="create_readable_json Coverage Results" MODIFIED="1507154036375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/data_preparation" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$duration_ver2.coverage" NAME="duration_ver2 Coverage Results" MODIFIED="1506535580908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/extract_duration" />
+    <SUITE FILE_PATH="coverage/User-Engagement-Video$combine.coverage" NAME="combine Coverage Results" MODIFIED="1507155302647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/combine_features" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1507058250052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/dtw" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$phrasecloud.coverage" NAME="phrasecloud Coverage Results" MODIFIED="1505935724474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/multiuser_analysis" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$uniquevideo.coverage" NAME="uniquevideo Coverage Results" MODIFIED="1507057373831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/singleuser_analysis" />
@@ -50,22 +51,19 @@
         <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+              <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
+      <file leaf-file-name="combine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#282#449#0" expanded="false" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -83,51 +81,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uniquevideo.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py">
+      <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33559322">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.8169491">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_readable_json.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/data_preparation/create_readable_json.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="e#152#253#0" expanded="false" />
-                <element signature="e#295#532#0" expanded="false" />
-                <element signature="e#573#959#0" expanded="false" />
-                <element signature="e#1002#1416#0" expanded="false" />
-                <element signature="e#1464#1861#0" expanded="false" />
-                <element signature="e#1905#2694#0" expanded="false" />
-                <element signature="e#2737#2879#0" expanded="false" />
-                <element signature="e#2911#3320#0" expanded="false" />
-                <element signature="e#3370#3600#0" expanded="false" />
-                <element signature="e#3631#5805#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duration_ver2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#477#694#0" expanded="false" />
-                <element signature="e#1057#1655#0" expanded="false" />
-                <element signature="e#1702#2501#0" expanded="false" />
-                <element signature="e#2551#3852#0" expanded="false" />
-                <element signature="e#3936#4805#0" expanded="false" />
+                <element signature="e#282#449#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -171,17 +131,17 @@
         <option value="$PROJECT_DIR$/code/multiuser_analysis/phrasecloud.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/readme" />
         <option value="$PROJECT_DIR$/code/dtw/readme" />
-        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/export_to_csv.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/extract_features.py" />
         <option value="$PROJECT_DIR$/code/Preliminary_Single_User_Expts/leaderboard.py" />
         <option value="$PROJECT_DIR$/code/extract_duration/duration_ver1.py" />
         <option value="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
-        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
-        <option value="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
-        <option value="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
         <option value="$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py" />
+        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
+        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
+        <option value="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
+        <option value="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
       </list>
     </option>
   </component>
@@ -253,6 +213,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User-Engagement-Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User-Engagement-Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extract_phrasecloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User-Engagement-Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User-Engagement-Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extract_mmtoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -278,7 +274,7 @@
       <recent name="$PROJECT_DIR$/code/dump" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_readable_json">
+  <component name="RunManager" selected="Python.combine">
     <configuration default="false" name="duration_ver3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,24 +289,6 @@
       <module name="User-Engagement-Video" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="uniquevideo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/singleuser_analysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="User-Engagement-Video" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/singleuser_analysis/uniquevideo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -365,6 +343,24 @@
       <module name="User-Engagement-Video" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="combine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/combine_features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="User-Engagement-Video" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/combine_features/combine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -564,18 +560,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.duration_ver3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.uniquevideo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.experiment" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dtw_exp" />
-      <item index="4" class="java.lang.String" itemvalue="Python.create_readable_json" />
+      <item index="1" class="java.lang.String" itemvalue="Python.experiment" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dtw_exp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.create_readable_json" />
+      <item index="4" class="java.lang.String" itemvalue="Python.combine" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.create_readable_json" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dtw_exp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.experiment" />
-        <item index="3" class="java.lang.String" itemvalue="Python.duration_ver3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.uniquevideo" />
+        <item index="0" class="java.lang.String" itemvalue="Python.combine" />
+        <item index="1" class="java.lang.String" itemvalue="Python.create_readable_json" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dtw_exp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.experiment" />
+        <item index="4" class="java.lang.String" itemvalue="Python.duration_ver3" />
       </list>
     </recent_temporary>
   </component>
@@ -594,9 +590,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24063745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24063745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -639,7 +635,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,14 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -844,7 +832,7 @@
         <state vertical-scroll-proportion="0.30508474">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,7 +842,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -872,7 +860,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,7 +870,7 @@
         <state vertical-scroll-proportion="0.1220339">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,7 +880,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -910,14 +898,24 @@
         <state vertical-scroll-proportion="0.45762712">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3898305">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/data_preparation/create_readable_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.1220339">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="e#152#253#0" expanded="false" />
@@ -936,10 +934,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.30508474">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
             <element signature="e#477#694#0" expanded="false" />
             <element signature="e#1057#1655#0" expanded="false" />
             <element signature="e#1702#2501#0" expanded="false" />
@@ -949,10 +947,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -961,31 +977,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.8169491">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
             <element signature="e#282#449#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33559322">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

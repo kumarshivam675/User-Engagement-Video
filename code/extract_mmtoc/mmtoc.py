@@ -21,22 +21,21 @@ def extract_week_number(raw_date):
 def create_mmtoc_dictionary(min_week, max_week):
     phrase_cloud_clicks = {}
     for i in range(min_week, max_week + 1):
-        phrase_cloud_clicks[i] = 0
+        phrase_cloud_clicks[i] = 0.0
 
     return phrase_cloud_clicks
 
 
 def extract_mmtoc_clicks():
-    main_db = []
+    print "mmtoc"
     user_log = {}
     count = 0
     for file in os.listdir(path):
         mmtoc_clicks = create_mmtoc_dictionary(18, 37)
         count += 1
         print count
-        # if count > 50:
+        # if count > 100:
         #     break
-        # print file
         if file != ".gitginore":
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
@@ -47,13 +46,20 @@ def extract_mmtoc_clicks():
                         if week_number in mmtoc_clicks:
                             mmtoc_clicks[week_number] += 1
                         else:
-                            mmtoc_clicks[week_number] = 1
+                            mmtoc_clicks[week_number] = 1.0
 
-                # temp_values = []
-                # for key in mmtoc_clicks:
-                #     temp_values.append(len(mmtoc_clicks[key]))
-                # main_db.append(temp_values)
                 user_log[file.split("_")[1].split(".")[0]] = mmtoc_clicks
+
+    max_click = 0
+    for user in user_log:
+        for week in user_log[user]:
+            if user_log[user][week] > max_click:
+                max_click = user_log[user][week]
+
+    # print "max click ", max_click
+    for user in user_log:
+        for week in user_log[user]:
+            user_log[user][week] /= max_click
 
     return user_log
 
