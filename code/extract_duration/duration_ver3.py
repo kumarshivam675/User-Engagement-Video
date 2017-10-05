@@ -107,4 +107,4 @@ def plot():
 
 
 # create_video_log()
-plot()
+#plot()

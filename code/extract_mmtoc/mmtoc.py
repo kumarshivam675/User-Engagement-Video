@@ -75,4 +75,4 @@ def mmtocplot_behaviour():
 
 
 # extract_mmtoc_clicks()
-mmtocplot_behaviour()
+# mmtocplot_behaviour()
