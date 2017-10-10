@@ -2,12 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/combine_features/combine.py" afterPath="$PROJECT_DIR$/code/combine_features/combine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" afterPath="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/dtw_exp.py" afterPath="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_03b3e4e39a0923d13da265a400c07752a2418309fbe1fac17e336124.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_03b3e4e39a0923d13da265a400c07752a2418309fbe1fac17e336124.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_234312f43642ef163b522b5b5bddd5811587708b8a4b0f87530147a1.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_234312f43642ef163b522b5b5bddd5811587708b8a4b0f87530147a1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_2defa56b2cfa55762a41009be049eb812edcd39f472df3389dc8307e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_2defa56b2cfa55762a41009be049eb812edcd39f472df3389dc8307e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_33f2684cb027a3f922097e5562d50eac1f101b1f66ef77647a63ac48.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_33f2684cb027a3f922097e5562d50eac1f101b1f66ef77647a63ac48.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_3780a9a2801bf29991b09953702561735ae0245dbcf415f321803d3e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_3780a9a2801bf29991b09953702561735ae0245dbcf415f321803d3e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a703fff4da2c0b5cd38a23ef7871cd4b774782ed75dd6694a222d48.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a703fff4da2c0b5cd38a23ef7871cd4b774782ed75dd6694a222d48.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a77d9278ce61f8596d462e7e05682f7b079be47e91c4cef91a161bc.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a77d9278ce61f8596d462e7e05682f7b079be47e91c4cef91a161bc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5cdfc7920ff4df485ef8a314138fab7a34e283616287abbf0f800dd2.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5cdfc7920ff4df485ef8a314138fab7a34e283616287abbf0f800dd2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_67f2c1f4339f955da0f85462e768a6ec281093d05e6d0c72380944bd.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_67f2c1f4339f955da0f85462e768a6ec281093d05e6d0c72380944bd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_6c6638a5ce7d3d18ceec65e796460b96232a86a4f6acffbb018ca6d7.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_6c6638a5ce7d3d18ceec65e796460b96232a86a4f6acffbb018ca6d7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_77ca233342e45a006c8ff7a6270b938ac7b31e6c845e63d4897abaef.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_77ca233342e45a006c8ff7a6270b938ac7b31e6c845e63d4897abaef.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7ad9d619e61abc13ccd52a47a203c62488b30a1ab362840fa6ae93d3.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7ad9d619e61abc13ccd52a47a203c62488b30a1ab362840fa6ae93d3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7d0e34bfd2371daebe59a12128d8fd53518d40faf94facbe9e8cb014.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7d0e34bfd2371daebe59a12128d8fd53518d40faf94facbe9e8cb014.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7eed417264abd4410be51dbe530130a7f262277f9a31fb52a27799d0.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7eed417264abd4410be51dbe530130a7f262277f9a31fb52a27799d0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_845a3a7778a7343e78cbab258e57e92920c3c15843ef7fc29d515489.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_845a3a7778a7343e78cbab258e57e92920c3c15843ef7fc29d515489.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_888503daf0da82094595c8163846d55675767d26178917ceb71b2bcb.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_888503daf0da82094595c8163846d55675767d26178917ceb71b2bcb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8bc95dff883f78612212b9b16ab63e4c6535c0e4f1670cfb7f78a571.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8bc95dff883f78612212b9b16ab63e4c6535c0e4f1670cfb7f78a571.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8d34dd65b965d4983a1f85d2270721e544d8cb46a246c1297dfe96f7.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8d34dd65b965d4983a1f85d2270721e544d8cb46a246c1297dfe96f7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e80261ce8bc6fd638c6b267c7d4e984e3c11d351e876915a84114e5.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e80261ce8bc6fd638c6b267c7d4e984e3c11d351e876915a84114e5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_973ba937643e0fea5883c457d74cfdebad279860d345641988a3fb92.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_973ba937643e0fea5883c457d74cfdebad279860d345641988a3fb92.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9e72eb395ba6fc2e9b2050bf4cc1dd954e2ecb149d67605b5d9a2555.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9e72eb395ba6fc2e9b2050bf4cc1dd954e2ecb149d67605b5d9a2555.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a87aab741d2023f85999940acd0118dc8fe20a1ed909d93262df8b31.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a87aab741d2023f85999940acd0118dc8fe20a1ed909d93262df8b31.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abd0f5245377406b6261942614705c1afd0380db111cd5d65c3b52fe.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abd0f5245377406b6261942614705c1afd0380db111cd5d65c3b52fe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abf61ba70e5232ea3e83e063bb5b52ef18b4bcaf7e27e5885bc26bab.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abf61ba70e5232ea3e83e063bb5b52ef18b4bcaf7e27e5885bc26bab.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ac0d3e75673c7a82b9634c99dcd9a40ec8589a3db9955d061046bee8.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ac0d3e75673c7a82b9634c99dcd9a40ec8589a3db9955d061046bee8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b62f7c0e2a0da522179eeb64bc59cb1e58b6571291d944a20ec5782f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b62f7c0e2a0da522179eeb64bc59cb1e58b6571291d944a20ec5782f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_be0564056a37f9f536dc74e7d48bb8f9882eaee38804f0f86fefcce4.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_be0564056a37f9f536dc74e7d48bb8f9882eaee38804f0f86fefcce4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bf1b8f7aaec239eaa84e3b64a68fbaa5a3a2316c0b60b98aa3d487db.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bf1b8f7aaec239eaa84e3b64a68fbaa5a3a2316c0b60b98aa3d487db.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c05556517ee06241a1ba3765dd795db083116fb8eeff037e9c3de68e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c05556517ee06241a1ba3765dd795db083116fb8eeff037e9c3de68e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_caea91a484691d9cc3d39498f75dee87cc0c114c4dcc6cfa96218627.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_caea91a484691d9cc3d39498f75dee87cc0c114c4dcc6cfa96218627.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_cb9d711bb75ad33751fe05576d8c6caf1cd75f5afa78b64e9f3e0e0a.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_cb9d711bb75ad33751fe05576d8c6caf1cd75f5afa78b64e9f3e0e0a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_dd02a14c6794a69c35e25cf9525f32e42cbdee0b101521a673202df6.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_dd02a14c6794a69c35e25cf9525f32e42cbdee0b101521a673202df6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e4dd21113ccece97395f9eade5bd1ed1cb3325f32d4716af71887e35.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e4dd21113ccece97395f9eade5bd1ed1cb3325f32d4716af71887e35.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ed475f14639a19b03b7059ab6c912a6a7a9ca1fc86976b8a2c166d7e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ed475f14639a19b03b7059ab6c912a6a7a9ca1fc86976b8a2c166d7e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ef807c7b73ff02abd3c43effdd5863b9467acd3f8f66150201c44553.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ef807c7b73ff02abd3c43effdd5863b9467acd3f8f66150201c44553.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f6dbc44e7900f453a1626340393fa0169f9cba0d3517ee378db3599f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f6dbc44e7900f453a1626340393fa0169f9cba0d3517ee378db3599f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_fe141408f06710d21f17b5d14c46f4b6f5424d5eeafdf18b4d96732f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_fe141408f06710d21f17b5d14c46f4b6f5424d5eeafdf18b4d96732f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/video_duration.csv" afterPath="$PROJECT_DIR$/code/extract_duration/video_duration.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrase_cloud_user.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,13 +65,13 @@
     <SUITE FILE_PATH="coverage/User-Engagement-Video$savetocsv.coverage" NAME="savetocsv Coverage Results" MODIFIED="1505858401433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$extract_features.coverage" NAME="extract_features Coverage Results" MODIFIED="1505920407377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$uniquevideo__1_.coverage" NAME="uniquevideo (1) Coverage Results" MODIFIED="1505921183104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/expt1" />
-    <SUITE FILE_PATH="coverage/User-Engagement-Video$dtw_exp.coverage" NAME="dtw_exp Coverage Results" MODIFIED="1507069844454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/dtw" />
+    <SUITE FILE_PATH="coverage/User-Engagement-Video$dtw_exp.coverage" NAME="dtw_exp Coverage Results" MODIFIED="1507644048661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/dtw" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$leaderboard__1_.coverage" NAME="leaderboard (1) Coverage Results" MODIFIED="1505935777372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/singleuser_analysis" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$duration_ver3.coverage" NAME="duration_ver3 Coverage Results" MODIFIED="1507057417900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/extract_duration" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$read_json.coverage" NAME="read_json Coverage Results" MODIFIED="1505419397640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$create_readable_json.coverage" NAME="create_readable_json Coverage Results" MODIFIED="1507154036375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/data_preparation" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$duration_ver2.coverage" NAME="duration_ver2 Coverage Results" MODIFIED="1506535580908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/extract_duration" />
-    <SUITE FILE_PATH="coverage/User-Engagement-Video$combine.coverage" NAME="combine Coverage Results" MODIFIED="1507155302647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/combine_features" />
+    <SUITE FILE_PATH="coverage/User-Engagement-Video$combine.coverage" NAME="combine Coverage Results" MODIFIED="1507476051369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/combine_features" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1507058250052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/dtw" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$phrasecloud.coverage" NAME="phrasecloud Coverage Results" MODIFIED="1505935724474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/multiuser_analysis" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$uniquevideo.coverage" NAME="uniquevideo Coverage Results" MODIFIED="1507057373831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/singleuser_analysis" />
@@ -51,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -61,10 +100,28 @@
         <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+              <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dtw_exp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.020725388">
+              <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,22 +130,8 @@
         <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8169491">
-              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-              <folding>
-                <element signature="e#282#449#0" expanded="false" />
-              </folding>
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,21 +170,21 @@
         <option value="$PROJECT_DIR$/code/savetocsv.py" />
         <option value="$PROJECT_DIR$/code/singleuser_analysis/duration_ver1.py" />
         <option value="$PROJECT_DIR$/code/dtw/experiment.py" />
-        <option value="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
         <option value="$PROJECT_DIR$/code/multiuser_analysis/phrasecloud.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/readme" />
         <option value="$PROJECT_DIR$/code/dtw/readme" />
-        <option value="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/export_to_csv.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/extract_features.py" />
         <option value="$PROJECT_DIR$/code/Preliminary_Single_User_Expts/leaderboard.py" />
         <option value="$PROJECT_DIR$/code/extract_duration/duration_ver1.py" />
-        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
         <option value="$PROJECT_DIR$/code/extract_uniquevideo/uniquevideo.py" />
-        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
-        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
         <option value="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
+        <option value="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
+        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
+        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
+        <option value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
         <option value="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
+        <option value="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
       </list>
     </option>
   </component>
@@ -227,7 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extract_phrasecloud" />
+              <option name="myItemId" value="dtw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,7 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extract_mmtoc" />
+              <option name="myItemId" value="combine_features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,18 +306,18 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/data_preparation" />
-      <recent name="$PROJECT_DIR$/code/dtw" />
-      <recent name="$PROJECT_DIR$/code/extract_duration" />
-      <recent name="$PROJECT_DIR$/code/user_data_test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/data_preparation" />
       <recent name="$PROJECT_DIR$/code/dump" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/dtw" />
+      <recent name="$PROJECT_DIR$/code/data_preparation" />
+      <recent name="$PROJECT_DIR$/code/extract_duration" />
+      <recent name="$PROJECT_DIR$/code/user_data_test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.combine">
+  <component name="RunManager" selected="Python.dtw_exp">
     <configuration default="false" name="duration_ver3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -567,9 +610,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.combine" />
-        <item index="1" class="java.lang.String" itemvalue="Python.create_readable_json" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dtw_exp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dtw_exp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.combine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.create_readable_json" />
         <item index="3" class="java.lang.String" itemvalue="Python.experiment" />
         <item index="4" class="java.lang.String" itemvalue="Python.duration_ver3" />
       </list>
@@ -592,14 +635,13 @@
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24063745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -609,6 +651,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -630,20 +673,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/data_preparation/create_readable_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#152#253#0" expanded="false" />
+            <element signature="e#295#532#0" expanded="false" />
+            <element signature="e#573#959#0" expanded="false" />
+            <element signature="e#1002#1416#0" expanded="false" />
+            <element signature="e#1937#2726#0" expanded="false" />
+            <element signature="e#2769#2911#0" expanded="false" />
+            <element signature="e#2943#3352#0" expanded="false" />
+            <element signature="e#3402#3632#0" expanded="false" />
+            <element signature="e#3663#5837#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#477#694#0" expanded="false" />
+            <element signature="e#1768#2567#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -651,10 +738,40 @@
     <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#477#694#0" expanded="false" />
+            <element signature="e#1768#2567#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -768,18 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/dtw/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33559322">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/dtw/duration.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0338984">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,9 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30508474">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,9 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,9 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,19 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1220339">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,17 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21355931">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45762712">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -907,81 +976,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3898305">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/data_preparation/create_readable_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1220339">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
           <folding>
+            <element signature="e#0#11#0" expanded="true" />
             <element signature="e#152#253#0" expanded="false" />
             <element signature="e#295#532#0" expanded="false" />
             <element signature="e#573#959#0" expanded="false" />
             <element signature="e#1002#1416#0" expanded="false" />
-            <element signature="e#1464#1861#0" expanded="false" />
-            <element signature="e#1905#2694#0" expanded="false" />
-            <element signature="e#2737#2879#0" expanded="false" />
-            <element signature="e#2911#3320#0" expanded="false" />
-            <element signature="e#3370#3600#0" expanded="false" />
-            <element signature="e#3631#5805#0" expanded="false" />
+            <element signature="e#1937#2726#0" expanded="false" />
+            <element signature="e#2769#2911#0" expanded="false" />
+            <element signature="e#2943#3352#0" expanded="false" />
+            <element signature="e#3402#3632#0" expanded="false" />
+            <element signature="e#3663#5837#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2440678">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30508474">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
             <element signature="e#477#694#0" expanded="false" />
-            <element signature="e#1057#1655#0" expanded="false" />
-            <element signature="e#1702#2501#0" expanded="false" />
-            <element signature="e#2551#3852#0" expanded="false" />
-            <element signature="e#3936#4805#0" expanded="false" />
+            <element signature="e#1768#2567#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8169491">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-          <folding>
-            <element signature="e#282#449#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dtw/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dtw/feature_vectors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020725388">
+          <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

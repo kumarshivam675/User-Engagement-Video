@@ -33,10 +33,11 @@ def extract_mmtoc_clicks():
     for file in os.listdir(path):
         mmtoc_clicks = create_mmtoc_dictionary(18, 37)
         count += 1
+        # print file
         print count
         # if count > 100:
         #     break
-        if file != ".gitginore":
+        if file != ".gitignore":
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
                     data = json.loads(line)

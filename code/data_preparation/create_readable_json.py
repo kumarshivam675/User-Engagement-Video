@@ -55,7 +55,7 @@ def extract_kenlist_id(client_msg):
 
 def extract_time_in_seconds(client_msg):
     if "kenlistID :" in client_msg:
-        if "at : " in  client_msg.split("kenlistID : ")[1]:
+        if "at : " in client_msg.split("kenlistID : ")[1]:
             time = re.sub("[^0-9.]", "", client_msg.split("kenlistID : ")[1].split(" : ")[1])
             if time[-1] == '.':
                 time = time[:-1]
@@ -63,7 +63,7 @@ def extract_time_in_seconds(client_msg):
             return time
 
     if "User playing time" in client_msg:
-        client_msg.split("User playing time")[1].split(":")
+        return re.sub("[^0-9.]", "", client_msg.split("User playing time")[1].split(":")[1])
 
     return "null"
 
@@ -175,7 +175,7 @@ def create_json_user_wise():
             with open(path + file) as json_data:
                 d = json.load(json_data)
             for feature in d:
-                with open(path + "code/userdata/result_" + feature['email_id']+".json", 'a') as fp:
+                with open(project_folder + "code/userdata/result_" + feature['email_id']+".json", 'a') as fp:
                     count += 1
                     try:
                         data = {}
@@ -206,4 +206,14 @@ def create_json_user_wise():
 # extract_features()
 # email_list = count_unique_user()
 # export_email_list_to_file(email_list)
-# create_json_user_wise()
+create_json_user_wise()
+
+# client_msg = "[log: 'Client log', msg: 'User playing time in seconds : 123 in video content_id : " \
+#              "81097 : of unit :  : of Course : 3143 : video : kCJXD7hwb1c : kenlistID : 4023']"
+# print client_msg
+# print extract_course_id(client_msg.encode('utf-8').strip())
+# print extract_video_id(client_msg.encode('utf-8').strip())
+# print extract_kenlist_id(client_msg.encode('utf-8').strip())
+# print extract_time_in_seconds(client_msg.encode('utf-8').strip())
+# print extract_user_action(client_msg.encode('utf-8').strip())
+# print check_if_video_log(client_msg.encode('utf-8').strip())
