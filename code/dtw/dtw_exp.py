@@ -121,7 +121,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
 # centroids=k_means_clust(data, 4, 4, 5)
 
 # print data.shape
-# data = np.vstack((y1, y2))
+# data = np.vstack((y1, y2)d)
 # print y1.shape
 # print y2.shape
 # print data.shape

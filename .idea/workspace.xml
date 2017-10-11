@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/combine_features/combine.py" afterPath="$PROJECT_DIR$/code/combine_features/combine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" afterPath="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/dtw_exp.py" afterPath="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" afterPath="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_03b3e4e39a0923d13da265a400c07752a2418309fbe1fac17e336124.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_03b3e4e39a0923d13da265a400c07752a2418309fbe1fac17e336124.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_234312f43642ef163b522b5b5bddd5811587708b8a4b0f87530147a1.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_234312f43642ef163b522b5b5bddd5811587708b8a4b0f87530147a1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_2defa56b2cfa55762a41009be049eb812edcd39f472df3389dc8307e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_2defa56b2cfa55762a41009be049eb812edcd39f472df3389dc8307e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_33f2684cb027a3f922097e5562d50eac1f101b1f66ef77647a63ac48.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_33f2684cb027a3f922097e5562d50eac1f101b1f66ef77647a63ac48.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_3780a9a2801bf29991b09953702561735ae0245dbcf415f321803d3e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_3780a9a2801bf29991b09953702561735ae0245dbcf415f321803d3e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a703fff4da2c0b5cd38a23ef7871cd4b774782ed75dd6694a222d48.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a703fff4da2c0b5cd38a23ef7871cd4b774782ed75dd6694a222d48.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a77d9278ce61f8596d462e7e05682f7b079be47e91c4cef91a161bc.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5a77d9278ce61f8596d462e7e05682f7b079be47e91c4cef91a161bc.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5cdfc7920ff4df485ef8a314138fab7a34e283616287abbf0f800dd2.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_5cdfc7920ff4df485ef8a314138fab7a34e283616287abbf0f800dd2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_67f2c1f4339f955da0f85462e768a6ec281093d05e6d0c72380944bd.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_67f2c1f4339f955da0f85462e768a6ec281093d05e6d0c72380944bd.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_6c6638a5ce7d3d18ceec65e796460b96232a86a4f6acffbb018ca6d7.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_6c6638a5ce7d3d18ceec65e796460b96232a86a4f6acffbb018ca6d7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_77ca233342e45a006c8ff7a6270b938ac7b31e6c845e63d4897abaef.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_77ca233342e45a006c8ff7a6270b938ac7b31e6c845e63d4897abaef.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7ad9d619e61abc13ccd52a47a203c62488b30a1ab362840fa6ae93d3.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7ad9d619e61abc13ccd52a47a203c62488b30a1ab362840fa6ae93d3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7d0e34bfd2371daebe59a12128d8fd53518d40faf94facbe9e8cb014.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7d0e34bfd2371daebe59a12128d8fd53518d40faf94facbe9e8cb014.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7eed417264abd4410be51dbe530130a7f262277f9a31fb52a27799d0.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_7eed417264abd4410be51dbe530130a7f262277f9a31fb52a27799d0.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_845a3a7778a7343e78cbab258e57e92920c3c15843ef7fc29d515489.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_845a3a7778a7343e78cbab258e57e92920c3c15843ef7fc29d515489.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_888503daf0da82094595c8163846d55675767d26178917ceb71b2bcb.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_888503daf0da82094595c8163846d55675767d26178917ceb71b2bcb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8bc95dff883f78612212b9b16ab63e4c6535c0e4f1670cfb7f78a571.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8bc95dff883f78612212b9b16ab63e4c6535c0e4f1670cfb7f78a571.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8d34dd65b965d4983a1f85d2270721e544d8cb46a246c1297dfe96f7.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8d34dd65b965d4983a1f85d2270721e544d8cb46a246c1297dfe96f7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e80261ce8bc6fd638c6b267c7d4e984e3c11d351e876915a84114e5.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_8e80261ce8bc6fd638c6b267c7d4e984e3c11d351e876915a84114e5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_973ba937643e0fea5883c457d74cfdebad279860d345641988a3fb92.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_973ba937643e0fea5883c457d74cfdebad279860d345641988a3fb92.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9e72eb395ba6fc2e9b2050bf4cc1dd954e2ecb149d67605b5d9a2555.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_9e72eb395ba6fc2e9b2050bf4cc1dd954e2ecb149d67605b5d9a2555.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a87aab741d2023f85999940acd0118dc8fe20a1ed909d93262df8b31.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_a87aab741d2023f85999940acd0118dc8fe20a1ed909d93262df8b31.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abd0f5245377406b6261942614705c1afd0380db111cd5d65c3b52fe.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abd0f5245377406b6261942614705c1afd0380db111cd5d65c3b52fe.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abf61ba70e5232ea3e83e063bb5b52ef18b4bcaf7e27e5885bc26bab.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_abf61ba70e5232ea3e83e063bb5b52ef18b4bcaf7e27e5885bc26bab.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ac0d3e75673c7a82b9634c99dcd9a40ec8589a3db9955d061046bee8.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ac0d3e75673c7a82b9634c99dcd9a40ec8589a3db9955d061046bee8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b62f7c0e2a0da522179eeb64bc59cb1e58b6571291d944a20ec5782f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_b62f7c0e2a0da522179eeb64bc59cb1e58b6571291d944a20ec5782f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_be0564056a37f9f536dc74e7d48bb8f9882eaee38804f0f86fefcce4.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_be0564056a37f9f536dc74e7d48bb8f9882eaee38804f0f86fefcce4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bf1b8f7aaec239eaa84e3b64a68fbaa5a3a2316c0b60b98aa3d487db.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_bf1b8f7aaec239eaa84e3b64a68fbaa5a3a2316c0b60b98aa3d487db.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c05556517ee06241a1ba3765dd795db083116fb8eeff037e9c3de68e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_c05556517ee06241a1ba3765dd795db083116fb8eeff037e9c3de68e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_caea91a484691d9cc3d39498f75dee87cc0c114c4dcc6cfa96218627.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_caea91a484691d9cc3d39498f75dee87cc0c114c4dcc6cfa96218627.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_cb9d711bb75ad33751fe05576d8c6caf1cd75f5afa78b64e9f3e0e0a.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_cb9d711bb75ad33751fe05576d8c6caf1cd75f5afa78b64e9f3e0e0a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_dd02a14c6794a69c35e25cf9525f32e42cbdee0b101521a673202df6.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_dd02a14c6794a69c35e25cf9525f32e42cbdee0b101521a673202df6.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e4dd21113ccece97395f9eade5bd1ed1cb3325f32d4716af71887e35.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_e4dd21113ccece97395f9eade5bd1ed1cb3325f32d4716af71887e35.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ed475f14639a19b03b7059ab6c912a6a7a9ca1fc86976b8a2c166d7e.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ed475f14639a19b03b7059ab6c912a6a7a9ca1fc86976b8a2c166d7e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ef807c7b73ff02abd3c43effdd5863b9467acd3f8f66150201c44553.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_ef807c7b73ff02abd3c43effdd5863b9467acd3f8f66150201c44553.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f6dbc44e7900f453a1626340393fa0169f9cba0d3517ee378db3599f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_f6dbc44e7900f453a1626340393fa0169f9cba0d3517ee378db3599f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_fe141408f06710d21f17b5d14c46f4b6f5424d5eeafdf18b4d96732f.json" afterPath="$PROJECT_DIR$/code/extract_duration/uservideodata/video_fe141408f06710d21f17b5d14c46f4b6f5424d5eeafdf18b4d96732f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_duration/video_duration.csv" afterPath="$PROJECT_DIR$/code/extract_duration/video_duration.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" afterPath="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,9 +75,11 @@
       <file leaf-file-name="dtw_exp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.020725388">
-              <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="3.6915255">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -633,7 +591,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -641,7 +599,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1066,9 +1024,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.020725388">
-          <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="3.6915255">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
