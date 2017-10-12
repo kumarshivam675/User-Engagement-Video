@@ -37,7 +37,7 @@ def add_lists(l1, l2, l3):
 
 def save(data):
     details = [data]
-    with open('feature_vectors.csv', 'a') as testfile:  # append it data to the csv file
+    with open('duration_vectors.csv', 'a') as testfile:  # append it data to the csv file
         csv_writer = csv.writer(testfile)
         csv_writer.writerow(details[0])
 
@@ -46,7 +46,7 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
     mmtoc_dict = mmtoc.extract_mmtoc_clicks()
     phrasecloud_dict = phrasecloud.extract_phrasecloud_clicks()
     duration = duration_ver3.create_video_log()
-    for i in mmtoc_dict:
+    for i in phrasecloud_dict:
         try:
             f1, f2, f3 = extract_vectors(mmtoc_dict[i], phrasecloud_dict[i], duration[i])
             weighted_f1 = multiply_scalar_vector(mmtoc_wt, f1)
@@ -58,5 +58,5 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
             print "error"
 
 
-combine_vectors(0.2, 0.4, 0.4)
+combine_vectors(0, 0, 1)
 

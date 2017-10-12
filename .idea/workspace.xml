@@ -2,6 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/dtw/duration_vectors.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/dtw/mmtoc_vectors.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/dtw/phrase_cloud_vectors.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_user.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/video_duration_user.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/code/dtw/feature_vectors.csv" afterPath="$PROJECT_DIR$/code/dtw/combined_feature_vectors.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_0.png" afterPath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_1.png" afterPath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_2.png" afterPath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_centroid.png" afterPath="$PROJECT_DIR$/code/dtw/combined_features_cluster/cluster_centroid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_0.png" afterPath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_1.png" afterPath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_2.png" afterPath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_centroid.png" afterPath="$PROJECT_DIR$/code/dtw/duration_cluster/cluster_centroid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_0.png" afterPath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_1.png" afterPath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_2.png" afterPath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_centroid.png" afterPath="$PROJECT_DIR$/code/dtw/phrase_cloud_cluster/cluster_centroid.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/combine_features/combine.py" afterPath="$PROJECT_DIR$/code/combine_features/combine.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/dtw_exp.py" afterPath="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
     </list>
     <ignored path="User-Engagement-Video.iws" />
@@ -27,7 +63,7 @@
     <SUITE FILE_PATH="coverage/User-Engagement-Video$read_json.coverage" NAME="read_json Coverage Results" MODIFIED="1505419397640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$create_readable_json.coverage" NAME="create_readable_json Coverage Results" MODIFIED="1507154036375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/data_preparation" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$duration_ver2.coverage" NAME="duration_ver2 Coverage Results" MODIFIED="1506535580908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/extract_duration" />
-    <SUITE FILE_PATH="coverage/User-Engagement-Video$combine.coverage" NAME="combine Coverage Results" MODIFIED="1507476051369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/combine_features" />
+    <SUITE FILE_PATH="coverage/User-Engagement-Video$combine.coverage" NAME="combine Coverage Results" MODIFIED="1507764773263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/combine_features" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1507058250052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/dtw" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$phrasecloud.coverage" NAME="phrasecloud Coverage Results" MODIFIED="1505935724474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/multiuser_analysis" />
     <SUITE FILE_PATH="coverage/User-Engagement-Video$uniquevideo.coverage" NAME="uniquevideo Coverage Results" MODIFIED="1507057373831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/singleuser_analysis" />
@@ -42,54 +78,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duration_ver3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="combine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mmtoc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dtw_exp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.6915255">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.11398964">
+              <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phrasecloud.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,9 +135,9 @@
         <option value="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
         <option value="$PROJECT_DIR$/code/data_preparation/create_readable_json.py" />
         <option value="$PROJECT_DIR$/code/extract_duration/duration_ver2.py" />
-        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
         <option value="$PROJECT_DIR$/code/extract_duration/duration_ver3.py" />
         <option value="$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py" />
+        <option value="$PROJECT_DIR$/code/combine_features/combine.py" />
         <option value="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
       </list>
     </option>
@@ -228,7 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dtw" />
+              <option name="myItemId" value="extract_phrasecloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,14 +242,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="combine_features" />
+              <option name="myItemId" value="dtw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,18 +260,18 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/data_preparation" />
-      <recent name="$PROJECT_DIR$/code/dump" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/dtw" />
       <recent name="$PROJECT_DIR$/code/data_preparation" />
       <recent name="$PROJECT_DIR$/code/extract_duration" />
       <recent name="$PROJECT_DIR$/code/user_data_test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/data_preparation" />
+      <recent name="$PROJECT_DIR$/code/dump" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.dtw_exp">
+  <component name="RunManager" selected="Python.combine">
     <configuration default="false" name="duration_ver3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -568,8 +564,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dtw_exp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.combine" />
+        <item index="0" class="java.lang.String" itemvalue="Python.combine" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dtw_exp" />
         <item index="2" class="java.lang.String" itemvalue="Python.create_readable_json" />
         <item index="3" class="java.lang.String" itemvalue="Python.experiment" />
         <item index="4" class="java.lang.String" itemvalue="Python.duration_ver3" />
@@ -591,15 +587,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2565737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -609,7 +606,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -631,38 +627,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/data_preparation/create_readable_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#152#253#0" expanded="false" />
-            <element signature="e#295#532#0" expanded="false" />
-            <element signature="e#573#959#0" expanded="false" />
-            <element signature="e#1002#1416#0" expanded="false" />
-            <element signature="e#1937#2726#0" expanded="false" />
-            <element signature="e#2769#2911#0" expanded="false" />
-            <element signature="e#2943#3352#0" expanded="false" />
-            <element signature="e#3402#3632#0" expanded="false" />
-            <element signature="e#3663#5837#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,10 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#477#694#0" expanded="false" />
-            <element signature="e#1768#2567#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,10 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <element signature="e#477#694#0" expanded="false" />
-            <element signature="e#1768#2567#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,20 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/dtw/duration.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/dtw/phrase_cloud_user.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -941,18 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#152#253#0" expanded="false" />
-            <element signature="e#295#532#0" expanded="false" />
-            <element signature="e#573#959#0" expanded="false" />
-            <element signature="e#1002#1416#0" expanded="false" />
-            <element signature="e#1937#2726#0" expanded="false" />
-            <element signature="e#2769#2911#0" expanded="false" />
-            <element signature="e#2943#3352#0" expanded="false" />
-            <element signature="e#3402#3632#0" expanded="false" />
-            <element signature="e#3663#5837#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,42 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="e#477#694#0" expanded="false" />
-            <element signature="e#1768#2567#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,11 +908,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/dtw/feature_vectors.csv">
+    <entry file="file://$PROJECT_DIR$/code/dtw/combined_feature_vectors.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1022,10 +919,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/combine_features/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_mmtoc/mmtoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030508475">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_duration/duration_ver3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.030508475">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dtw/duration_vectors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33239436">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/combine_features/combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49295774">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6915255">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.11398964">
+          <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

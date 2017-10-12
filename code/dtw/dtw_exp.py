@@ -26,22 +26,22 @@ def DTWDistance(s1, s2):
     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
 
 
-def DTWDistance(s1, s2, w):
-    DTW={}
-
-    w = max(w, abs(len(s1)-len(s2)))
-
-    for i in range(-1,len(s1)):
-        for j in range(-1,len(s2)):
-            DTW[(i, j)] = float('inf')
-    DTW[(-1, -1)] = 0
-
-    for i in range(len(s1)):
-        for j in range(max(0, i-w), min(len(s2), i+w)):
-            dist= (s1[i]-s2[j])**2
-            DTW[(i, j)] = dist + min(DTW[(i-1, j)],DTW[(i, j-1)], DTW[(i-1, j-1)])
-
-    return math.sqrt(DTW[len(s1)-1, len(s2)-1])
+# def DTWDistance(s1, s2, w):
+#     DTW={}
+#
+#     w = max(w, abs(len(s1)-len(s2)))
+#
+#     for i in range(-1,len(s1)):
+#         for j in range(-1,len(s2)):
+#             DTW[(i, j)] = float('inf')
+#     DTW[(-1, -1)] = 0
+#
+#     for i in range(len(s1)):
+#         for j in range(max(0, i-w), min(len(s2), i+w)):
+#             dist= (s1[i]-s2[j])**2
+#             DTW[(i, j)] = dist + min(DTW[(i-1, j)],DTW[(i, j-1)], DTW[(i-1, j-1)])
+#
+#     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
 
 
 def LB_Keogh(s1,s2,r):
@@ -73,7 +73,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
             closest_clust = None
             for c_ind,j in enumerate(centroids):
                 if LB_Keogh(i, j, 5) < min_dist:
-                    cur_dist = DTWDistance(i, j, w)
+                    cur_dist = DTWDistance(i, j)
                     if cur_dist < min_dist:
                         min_dist = cur_dist
                         closest_clust = c_ind
@@ -95,6 +95,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
     print assignments
     for key in assignments:
         for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
             plt.plot(data[i])
         plt.savefig("cluster_" + str(key) + ".png")
         # plt.show()
@@ -126,13 +127,16 @@ def k_means_clust(data, num_clust, num_iter, w=5):
 # print y2.shape
 # print data.shape
 
-data = np.genfromtxt('feature_vectors.csv', delimiter=',')
+data = np.genfromtxt('duration_vectors.csv', delimiter=',')
 # print data
-centroids = k_means_clust(data, 7, 20, 3)
-print centroids
+centroids = k_means_clust(data, 3, 500, 3)
+# print centroids
+
 
 for i in centroids:
+    # plt.plot(i, label='No of user: %.2f' % (len(centroids[i])))
     plt.plot(i)
+
 plt.savefig("cluster_centroid.png")
 # plt.show()
 plt.clf()
