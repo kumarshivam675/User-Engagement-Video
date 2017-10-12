@@ -126,7 +126,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
 # print y2.shape
 # print data.shape
 
-data = np.genfromtxt('phrase_cloud_user.csv', delimiter=',')
+data = np.genfromtxt('feature_vectors.csv', delimiter=',')
 # print data
 centroids = k_means_clust(data, 7, 20, 3)
 print centroids

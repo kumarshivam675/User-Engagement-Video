@@ -45,6 +45,7 @@ def get_video_duration():
     with f:
         reader = csv.DictReader(f)
         for row in reader:
+            # print row['duration']
             videos_on_youtube.append(row['video_id'])
             videos_duration.append(row['duration'])
     videos_duration_seconds = []
@@ -53,6 +54,7 @@ def get_video_duration():
         b = datetime.timedelta(hours=a.tm_hour, minutes=a.tm_min, seconds=a.tm_sec).seconds
         videos_duration_seconds.append(b)
     dictionary = dict(zip(videos_on_youtube, videos_duration_seconds))
+    # print "\n\n hello \n\n"
     return dictionary
 
 
@@ -87,7 +89,7 @@ def extract_watch_duration(video, length):
         time_ptr = 0.0
         try:
             for action in video[date]:
-                # print date, action
+                # print action
                 if "pause" in action[1] and prev_state == "playing":
                     duration += abs(float(action[2]) - time_ptr)
                     time_ptr = float(action[2])
@@ -116,6 +118,7 @@ def extract_watch_duration(video, length):
                 print date, action
             print "\n\n"
             # print duration
+        # print duration
 
     return date_wise_duration
 
@@ -151,8 +154,9 @@ def create_video_log():
         print file
         count += 1
         print count
-        videos_access = get_video(file)
-        get_log_user(videos_access, file.split("_")[1].split(".")[0])
+        if file != ".gitignore":
+        	videos_access = get_video(file)
+        	get_log_user(videos_access, file.split("_")[1].split(".")[0])
 
 
 # videos_access = get_video(file1)

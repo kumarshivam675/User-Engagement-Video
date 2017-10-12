@@ -47,8 +47,8 @@ def get_summary(user_summary):
         else:
             user_week_summary[week] = duration / video_count
 
-    for week in user_week_summary:
-        print week, user_week_summary[week]
+    # for week in user_week_summary:
+    #     print week, user_week_summary[week]
     return user_week_summary
 
 
@@ -66,10 +66,10 @@ def create_video_log():
     user_summary = create_unique_video_dictionary(18, 37)
     for file in os.listdir(path):
         if file != ".gitignore":
-            print file
+            print count
             count += 1
-            if count > 240:
-                break
+            # if count > 240:
+            #     break
             with open(path + file, 'r') as data_file:
                 for line in data_file.readlines():
                     data = json.loads(line)
