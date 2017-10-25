@@ -26,22 +26,22 @@ def DTWDistance(s1, s2):
     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
 
 
-def DTWDistance(s1, s2, w):
-    DTW={}
-
-    w = max(w, abs(len(s1)-len(s2)))
-
-    for i in range(-1,len(s1)):
-        for j in range(-1,len(s2)):
-            DTW[(i, j)] = float('inf')
-    DTW[(-1, -1)] = 0
-
-    for i in range(len(s1)):
-        for j in range(max(0, i-w), min(len(s2), i+w)):
-            dist= (s1[i]-s2[j])**2
-            DTW[(i, j)] = dist + min(DTW[(i-1, j)],DTW[(i, j-1)], DTW[(i-1, j-1)])
-
-    return math.sqrt(DTW[len(s1)-1, len(s2)-1])
+# def DTWDistance(s1, s2, w):
+#     DTW={}
+#
+#     w = max(w, abs(len(s1)-len(s2)))
+#
+#     for i in range(-1,len(s1)):
+#         for j in range(-1,len(s2)):
+#             DTW[(i, j)] = float('inf')
+#     DTW[(-1, -1)] = 0
+#
+#     for i in range(len(s1)):
+#         for j in range(max(0, i-w), min(len(s2), i+w)):
+#             dist= (s1[i]-s2[j])**2
+#             DTW[(i, j)] = dist + min(DTW[(i-1, j)],DTW[(i, j-1)], DTW[(i-1, j-1)])
+#
+#     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
 
 
 def LB_Keogh(s1,s2,r):
@@ -73,7 +73,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
             closest_clust = None
             for c_ind,j in enumerate(centroids):
                 if LB_Keogh(i, j, 5) < min_dist:
-                    cur_dist = DTWDistance(i, j, w)
+                    cur_dist = DTWDistance(i, j)
                     if cur_dist < min_dist:
                         min_dist = cur_dist
                         closest_clust = c_ind
@@ -92,47 +92,69 @@ def k_means_clust(data, num_clust, num_iter, w=5):
             # print clust_sum
             centroids[key] = [m/len(assignments[key]) for m in clust_sum]
 
-    print assignments
+    for key in assignments:
+        print key, assignments[key]
+
+    return centroids, assignments
+
+
+def cluster(feature, duration, mmtoc, phrasecloud, num_clust, num_iter, w=5):
+    centroids, assignments = k_means_clust(feature, num_clust, num_iter, w)
+
     for key in assignments:
         for i in assignments[key]:
-            plt.plot(data[i])
-        plt.savefig("cluster_" + str(key) + ".png")
-        # plt.show()
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(feature[i])
+        plt.savefig("./cluster_visualization/feature_" + str(key) + ".png")
         plt.clf()
 
-    return centroids
+        for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(duration[i])
+        plt.savefig("./cluster_visualization/duration_" + str(key) + ".png")
+        plt.clf()
+
+        for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(mmtoc[i])
+        plt.savefig("./cluster_visualization/mmtoc_" + str(key) + ".png")
+        plt.clf()
+
+        for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(phrasecloud[i])
+        plt.savefig("./cluster_visualization/phrasecloud_" + str(key) + ".png")
+        plt.clf()
+
+    for i in centroids:
+        plt.plot(i)
+
+    plt.savefig("cluster_centroid.png")
+    # plt.show()
+    plt.clf()
 
 
-# x = np.array([18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]).reshape(-1, 1)
-#
-# y1 = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6200579929945306, 0.6438632501087107, 0.0, 0.0,
-#                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]).reshape(1, 20)
-#
-# y2 = np.array([0.0, 0.0, 0.0, 0.0, 0.49130419087139987, 0.2515370286958988, 0.32048017049845784,
-#      0.4208220476684349, 0.45271634796775506, 0.523880610864608, 0.3701577102264382,
-#      0.4075776421848937, 9.372698899424437e-05, 0.0, 0.0, 0.0, 0.0, 0.0,
-#               0.35688195163750286, 0.0]).reshape(1, 20)
+def read_data():
+    feature = []
+    temp = np.genfromtxt('feature_vectors.csv', delimiter=',')
+    for value in temp:
+        feature.append(value[1:])
 
+    duration = []
+    temp = np.genfromtxt('duration_vectors.csv', delimiter=',')
+    for value in temp:
+        duration.append(value[1:])
 
-# train = np.genfromtxt('train.csv', delimiter='\t')
-# print train.shape
-# test = np.genfromtxt('test.csv', delimiter='\t')
-# data = np.vstack((train[:, :-1], test[:, :-1]))
-# centroids=k_means_clust(data, 4, 4, 5)
+    mmtoc = []
+    temp = np.genfromtxt('mmtoc_vectors.csv', delimiter=',')
+    for value in temp:
+        mmtoc.append(value[1:])
 
-# print data.shape
-# data = np.vstack((y1, y2)d)
-# print y1.shape
-# print y2.shape
-# print data.shape
+    phrasecloud = []
+    temp = np.genfromtxt('phrasecloud_vectors.csv', delimiter=',')
+    for value in temp:
+        phrasecloud.append(value[1:])
 
-data = np.genfromtxt('feature_vectors.csv', delimiter=',')
-# print data
-centroids = k_means_clust(data, 7, 20, 3)
-print centroids
+    cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
 
-for i in centroids:
-    plt.plot(i)
-plt.savefig("cluster_centroid.png")
-# plt.show()
-plt.clf()
+read_data()
