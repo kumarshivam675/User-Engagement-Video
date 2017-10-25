@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/combine_features/duration_vectors.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/combine_features/feature_vectors.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/combine_features/mmtoc_vectors.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/combine_features/phrase_cloud_vectors.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/combined_feature_vectors.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/dtw/phrase_cloud_vectors.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/combine_features/combine.py" afterPath="$PROJECT_DIR$/code/combine_features/combine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/dtw_exp.py" afterPath="$PROJECT_DIR$/code/dtw/dtw_exp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/duration_vectors.csv" afterPath="$PROJECT_DIR$/code/dtw/duration_vectors.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/feature_vectors.csv" afterPath="$PROJECT_DIR$/code/dtw/feature_vectors.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/dtw/mmtoc_vectors.csv" afterPath="$PROJECT_DIR$/code/dtw/mmtoc_vectors.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" afterPath="$PROJECT_DIR$/code/extract_phrasecloud/phrasecloud.py" />
-    </list>
+    <list default="true" id="71606ca9-f58b-487f-8d93-afd483593433" name="Default" comment="" />
     <ignored path="User-Engagement-Video.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -57,7 +43,7 @@
       <file leaf-file-name="dtw_exp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4881356">
+            <state vertical-scroll-proportion="3.5084746">
               <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -937,7 +923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/dtw/dtw_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4881356">
+        <state vertical-scroll-proportion="3.5084746">
           <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
