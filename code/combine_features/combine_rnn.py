@@ -63,7 +63,7 @@ def create_vectors():
 
     # print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(user_cluster)
 
-    vector = []
+    feature = []
     target = []
     for user in phrasecloud_dict:
         if user in user_cluster:
@@ -75,18 +75,19 @@ def create_vectors():
 
             user_vector = []
             for i in range(0, len(mmtoc_vector)):
-                feature = [mmtoc_vector[i], phrasecloud_vector[i], duration_vector[i]]
-                user_vector.append(feature)
+                feature_week = [mmtoc_vector[i], phrasecloud_vector[i], duration_vector[i]]
+                user_vector.append(feature_week)
 
             # print "len of vector is ", len(user_vector)
-
-            vector.append(user_vector)
+            seq_len = len(user_vector)
+            feature.append(user_vector)
             target.append(user_cluster[user])
 
-    seq_len = [len(feature)]*len(target)
-    np.savez("train.npz", np.array(vector[:500]), np.array(target[:500]), np.array(seq_len[:500]))
-    np.savez("test.npz", np.array(vector[500:]), np.array(target[500:]), np.array(seq_len[500:]))
-    return vector, target, seq_len
+    seq_len = [seq_len]*len(target)
+    print seq_len
+    np.savez("train.npz", np.array(feature[:450]), np.array(target[:450]), np.array(seq_len[:450]))
+    np.savez("test.npz", np.array(feature[450:]), np.array(target[450:]), np.array(seq_len[450:]))
+    return feature, target, seq_len
 
 create_vectors()
 
