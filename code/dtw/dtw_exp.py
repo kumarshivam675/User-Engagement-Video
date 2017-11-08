@@ -69,6 +69,7 @@ def k_means_clust(data, num_clust, num_iter, w=5):
         assignments = {}
         #assign data points to clusters
         for ind,i in enumerate(data):
+            # print ind, i
             min_dist = float('inf')
             closest_clust = None
             for c_ind,j in enumerate(centroids):
@@ -80,10 +81,14 @@ def k_means_clust(data, num_clust, num_iter, w=5):
             if closest_clust in assignments:
                 assignments[closest_clust].append(ind)
             else:
-                assignments[closest_clust] = []
+                assignments[closest_clust] = [ind]
 
         #recalculate centroids of clusters
         # print assignments
+        # for key in assignments:
+        #     print key, assignments[key]
+        # print "\n\n\n"
+
         for key in assignments:
             clust_sum = 0
             for k in assignments[key]:
@@ -92,37 +97,56 @@ def k_means_clust(data, num_clust, num_iter, w=5):
             # print clust_sum
             centroids[key] = [m/len(assignments[key]) for m in clust_sum]
 
-    for key in assignments:
-        print key, assignments[key]
+    # for key in assignments:
+        # print key, assignments[key]
 
     return centroids, assignments
 
 
-def cluster(feature, duration, mmtoc, phrasecloud, num_clust, num_iter, w=5):
-    centroids, assignments = k_means_clust(feature, num_clust, num_iter, w)
+def cluster(num_clust, num_iter, w=5):
+    feature, duration, mmtoc, phrasecloud = read_data()
+    data = [item[2:] for item in feature]
+    centroids, assignments = k_means_clust(data, num_clust, num_iter, w)
+
+    distribution = {}
+
+    for key in assignments:
+        distribution[key] = {}
+        # print key, assignments[key]
+        for user in assignments[key]:
+            if feature[user][1] in distribution[key]:
+                distribution[key][int(feature[user][1])] += 1
+            else:
+                distribution[key][int(feature[user][1])] = 1
+
+    for key in distribution:
+        print "cluster id ", key
+        for category in distribution[key]:
+            print category, distribution[key][category]
+        print "\n\n"
 
     for key in assignments:
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
-            plt.plot(feature[i])
+            plt.plot(feature[i][2:])
         plt.savefig("./cluster_visualization/feature_" + str(key) + ".png")
         plt.clf()
 
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
-            plt.plot(duration[i])
+            plt.plot(duration[i][2:])
         plt.savefig("./cluster_visualization/duration_" + str(key) + ".png")
         plt.clf()
 
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
-            plt.plot(mmtoc[i])
+            plt.plot(mmtoc[i][2:])
         plt.savefig("./cluster_visualization/mmtoc_" + str(key) + ".png")
         plt.clf()
 
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
-            plt.plot(phrasecloud[i])
+            plt.plot(phrasecloud[i][2:])
         plt.savefig("./cluster_visualization/phrasecloud_" + str(key) + ".png")
         plt.clf()
 
@@ -138,23 +162,26 @@ def read_data():
     feature = []
     temp = np.genfromtxt('feature_vectors.csv', delimiter=',')
     for value in temp:
-        feature.append(value[1:])
+        feature.append(value)
 
     duration = []
     temp = np.genfromtxt('duration_vectors.csv', delimiter=',')
     for value in temp:
-        duration.append(value[1:])
+        duration.append(value)
 
     mmtoc = []
     temp = np.genfromtxt('mmtoc_vectors.csv', delimiter=',')
     for value in temp:
-        mmtoc.append(value[1:])
+        mmtoc.append(value)
 
     phrasecloud = []
     temp = np.genfromtxt('phrasecloud_vectors.csv', delimiter=',')
     for value in temp:
-        phrasecloud.append(value[1:])
+        phrasecloud.append(value)
 
-    cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
+    return feature, duration, mmtoc, phrasecloud
 
-read_data()
+    # cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
+
+# read_data()
+cluster(4, 500, 3)

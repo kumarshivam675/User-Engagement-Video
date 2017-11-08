@@ -5,8 +5,6 @@ score = []
 total = []
 email = []
 
-
-
 with open("leaderboard.csv") as f:
     reader = csv.DictReader(f)
     for row in reader:

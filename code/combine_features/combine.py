@@ -1,6 +1,7 @@
 import sys
 import csv
 from config import project_folder
+import extract_ground_truth
 
 sys.path.insert(0, project_folder + 'code/extract_duration')
 sys.path.insert(0, project_folder + 'code/extract_phrasecloud')
@@ -40,19 +41,26 @@ def add_lists(l1, l2, l3):
     return map(sum, zip(l1, l2, l3))
 
 
-def save(email, data, filename):
-    data.insert(0, email) #insert email id in the beginning
-    details = [data]
-    with open(filename, 'a') as testfile:  # append it data to the csv file
-        csv_writer = csv.writer(testfile)
-        csv_writer.writerow(details[0])
+def save(email, user_cluster, data, filename):
+    try:
+        data.insert(0, user_cluster[email])
+        data.insert(0, email) #insert email id in the beginning
+        details = [data]
+        with open(filename, 'a') as testfile:  # append it data to the csv file
+            csv_writer = csv.writer(testfile)
+            csv_writer.writerow(details[0])
+    except:
+        print "key error", email
 
 
 def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
     mmtoc_dict = mmtoc.extract_mmtoc_clicks()
     phrasecloud_dict = phrasecloud.extract_phrasecloud_clicks()
     duration_dict = duration_ver3.create_video_log()
+    user_cluster = extract_ground_truth.ground_truth()
     count = 0
+
+    print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(user_cluster)
 
     for user in phrasecloud_dict:
         count += 1
@@ -72,12 +80,12 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
         feature_vector = add_lists(weighted_f1, weighted_f2, weighted_f3)
 
         # print "beginning to save in the csv"
-        save(user, feature_vector, "feature_vectors.csv")
+        save(user, user_cluster, feature_vector, "feature_vectors.csv")
 
-        save(user, multiply_scalar_vector(1, mmtoc_vector), "mmtoc_vectors.csv")
-        save(user, multiply_scalar_vector(1, duration_vector), "duration_vectors.csv")
-        save(user, multiply_scalar_vector(1, phrasecloud_vector), "phrasecloud_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, mmtoc_vector), "mmtoc_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, duration_vector), "duration_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), "phrasecloud_vectors.csv")
 
 
-combine_vectors(0.3, 0.3, 0.4)
+combine_vectors(0.1, 0.2, 0.6)
 
