@@ -19,16 +19,16 @@ def ground_truth():
     for i in range(len(email)):
         if total[i] >0:
             if ((score[i])*100)/total[i] >= 90.0:
-                list_cluster[email[i]] = 1
+                list_cluster[email[i]] = 0
             elif ((score[i])*100)/total[i] < 90.0 and ((score[i])*100)/total[i] >= 50.0:
-                list_cluster[email[i]] = 2
+                list_cluster[email[i]] = 1
             elif ((score[i])*100)/total[i] < 50.0 and ((score[i])*100)/total[i] >= 10:
-                list_cluster[email[i]] = 3
+                list_cluster[email[i]] = 2
             elif ((score[i])*100)/total[i] < 10.0:
-                list_cluster[email[i]] = 3
+                list_cluster[email[i]] = 2
         elif total[i] == 0:
-            list_cluster[email[i]] = 4
+            list_cluster[email[i]] = 2
 
-    return  list_cluster
+    return list_cluster
 
 
