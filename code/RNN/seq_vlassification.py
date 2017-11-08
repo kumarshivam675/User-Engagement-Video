@@ -11,7 +11,6 @@ batch_size = 1
 num_classes = 3
 input_size = 3
 
-file_object = open('/media/disk2/trisha/error1-1.txt', 'w')
 
 def lazy_property(function):
     attribute = '_' + function.__name__
@@ -29,24 +28,25 @@ def get_on_hot(number):
     return on_hot
 
 def data_train_prep():
-    train = np.load('/media/disk2/trisha/data_preparation/train.npz')
-    feature = train['arr_1'].tolist()
-    label = train['arr_2'].tolist()
+    train = np.load('/home/trisha/Desktop/Acad/Semester9/PE/User-Engagement-Video/code/combine_features/train.npz')
+    feature = train['arr_0'].tolist()
+    label = train['arr_1'].tolist()
     labels = map(get_on_hot, label)
-    seq_len = train['arr_3'].tolist()
-    c = list(zip(sketch, labels, seq_len))
+    seq_len = train['arr_2'].tolist()
+    c = list(zip(feature, labels, seq_len))
     random.shuffle(c)
     feature, labels, seq_len = zip(*c)
+    print len(feature), len(labels), len(seq_len)
     return feature, labels, seq_len
 
 
 def data_test_prep():
-    test = np.load('/media/disk2/trisha/data_preparation/valid.npz')
-    tfeature = test['arr_1'].tolist()
-    tlabel = test['arr_2'].tolist()
+    test = np.load('/home/trisha/Desktop/Acad/Semester9/PE/User-Engagement-Video/code/combine_features/test.npz')
+    tfeature = test['arr_0'].tolist()
+    tlabel = test['arr_1'].tolist()
     tlabels = map(get_on_hot, tlabel)
-    tseq_len = test['arr_3'].tolist()
-    c = list(zip(tsketch, tlabels, tseq_len))
+    tseq_len = test['arr_2'].tolist()
+    c = list(zip(tfeature, tlabels, tseq_len))
     random.shuffle(c)
     tfeature, tlabels, tseq_len = zip(*c)
     return tfeature, tlabels, tseq_len
@@ -68,7 +68,7 @@ class VariableSequenceLabelling:
     def prediction(self):
         # Recurrent network.
         output, _ = tf.nn.dynamic_rnn(
-            tf.nn.rnn_cell.GRUCell(self._num_hidden),
+            tf.contrib.rnn.BasicLSTMCell(self._num_hidden),
             self.data,
             dtype=tf.float32,
             sequence_length=self.seqlen,
@@ -94,7 +94,7 @@ class VariableSequenceLabelling:
 
     @lazy_property
     def optimize(self):
-        learning_rate = 0.0001
+        learning_rate = 0.01
         optimizer = tf.train.AdamOptimizer(learning_rate)
         return optimizer.minimize(self.cost)
 
@@ -135,26 +135,25 @@ for epoch in range(100):
     for i in range(len(feature)):
         X = feature[start:end]
         Y = labels[start:end]
-        L = seq_len[start:end]
+        L = len(X[0])
         temp = []
         for i in range(len(Y)):
-            temp.append(np.array([Y[i]] * L[i]))
+            temp.append(np.array([Y[i]] * L))
         start = end
         end = start + 1
-        sess.run(model.optimize, {data: X, target: temp, seqlen: L[0]})
+        sess.run(model.optimize, {data: X, target: temp, seqlen: L})
     for i in range(len(tfeature)):
         X = tfeature[start1:end1]
         Y = tlabels[start1:end1]
-        L = tseq_len[start1:end1]
+        L = len(X[0])
         temp = []
         for i in range(len(Y)):
-            temp.append(np.array([Y[i]] * L[i]))
+            temp.append(np.array([Y[i]] * L))
         start1 = end1
         end1 = start1 + 1
-        error += sess.run(model.error, {data: X, target: temp, seqlen: L[0]})
+        error += sess.run(model.error, {data: X, target: temp, seqlen: L})
     print("Error: ", error)
-    print >> file_object, (error) / 144
-    print('Epoch {:2d} error {:3.1f}%'.format(epoch, ((error)) / 144))
+    print('Epoch {:2d} error {:3.1f}%'.format(epoch, ((error) *100) / 144))
 
 
 
