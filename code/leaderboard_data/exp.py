@@ -26,6 +26,6 @@ for i in range(len(email)):
         elif ((score[i])*100)/total[i] < 10.0:
             list_cluster[email[i]] = 3
     elif total[i] == 0:
-        list_cluster[email[i]] = 4
+        list_cluster[email[i]] = 3
 
 
