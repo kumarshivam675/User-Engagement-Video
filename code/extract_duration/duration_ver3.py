@@ -66,7 +66,7 @@ def create_video_log():
     user_summary = create_unique_video_dictionary(18, 37)
     for file in os.listdir(path):
         if file != ".gitignore":
-            print count
+            # print count
             count += 1
             # if count > 240:
             #     break

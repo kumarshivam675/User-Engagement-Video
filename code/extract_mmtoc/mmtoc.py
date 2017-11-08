@@ -34,7 +34,7 @@ def extract_mmtoc_clicks():
         mmtoc_clicks = create_mmtoc_dictionary(18, 37)
         count += 1
         # print file
-        print count
+        # print count
         # if count > 100:
         #     break
         if file != ".gitignore":

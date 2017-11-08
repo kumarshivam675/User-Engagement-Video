@@ -2,6 +2,7 @@ import sys
 import csv
 from config import project_folder
 import extract_ground_truth
+import numpy as np
 
 sys.path.insert(0, project_folder + 'code/extract_duration')
 sys.path.insert(0, project_folder + 'code/extract_phrasecloud')
@@ -53,39 +54,39 @@ def save(email, user_cluster, data, filename):
         print "key error", email
 
 
-def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
+def create_vectors():
     mmtoc_dict = mmtoc.extract_mmtoc_clicks()
     phrasecloud_dict = phrasecloud.extract_phrasecloud_clicks()
     duration_dict = duration_ver3.create_video_log()
     user_cluster = extract_ground_truth.ground_truth()
     count = 0
 
-    print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(user_cluster)
+    # print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(user_cluster)
 
+    vector = []
+    target = []
     for user in phrasecloud_dict:
-        count += 1
-        print count
-        mmtoc_vector = extract_vectors(mmtoc_dict[user])
-        phrasecloud_vector = extract_vectors(phrasecloud_dict[user])
-        duration_vector = extract_vectors(duration_dict[user])
+        if user in user_cluster:
+            count += 1
+            print count
+            mmtoc_vector = extract_vectors(mmtoc_dict[user])
+            phrasecloud_vector = extract_vectors(phrasecloud_dict[user])
+            duration_vector = extract_vectors(duration_dict[user])
 
-        # print "vector extraction done"
+            user_vector = []
+            for i in range(0, len(mmtoc_vector)):
+                feature = [mmtoc_vector[i], phrasecloud_vector[i], duration_vector[i]]
+                user_vector.append(feature)
 
-        weighted_f1 = multiply_scalar_vector(mmtoc_wt, mmtoc_vector)
-        weighted_f2 = multiply_scalar_vector(phrase_wt, phrasecloud_vector)
-        weighted_f3 = multiply_scalar_vector(duration_wt, duration_vector)
+            # print "len of vector is ", len(user_vector)
 
-        # print "vector multiplication done"
+            vector.append(user_vector)
+            target.append(user_cluster[user])
 
-        feature_vector = add_lists(weighted_f1, weighted_f2, weighted_f3)
+    seq_len = [len(feature)]*len(target)
+    np.savez("train.npz", np.array(vector[:500]), np.array(target[:500]), np.array(seq_len[:500]))
+    np.savez("test.npz", np.array(vector[500:]), np.array(target[500:]), np.array(seq_len[500:]))
+    return vector, target, seq_len
 
-        # print "beginning to save in the csv"
-        save(user, user_cluster, feature_vector, "feature_vectors.csv")
-
-        save(user, user_cluster, multiply_scalar_vector(1, mmtoc_vector), "mmtoc_vectors.csv")
-        save(user, user_cluster, multiply_scalar_vector(1, duration_vector), "duration_vectors.csv")
-        save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), "phrasecloud_vectors.csv")
-
-
-combine_vectors(0.1, 0.2, 0.6)
+create_vectors()
 

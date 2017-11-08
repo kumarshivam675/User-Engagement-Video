@@ -50,7 +50,7 @@ def extract_phrasecloud_clicks():
                         else:
                             phrase_cloud_clicks[week_number] = 1.0
 
-                print len(phrase_cloud_clicks)
+                # print len(phrase_cloud_clicks)
 
                 user_log[file.split("_")[1].split(".")[0]] = phrase_cloud_clicks
 
