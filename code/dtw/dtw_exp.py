@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pylab as plt
 import math
 import random
+from config import project_folder
 
 
 def euclid_dist(t1,t2):
@@ -104,26 +105,38 @@ def k_means_clust(data, num_clust, num_iter, w=5):
 
 
 def cluster(num_clust, num_iter, w=5):
-    feature, duration, mmtoc, phrasecloud = read_data()
+    feature, duration, mmtoc, phrasecloud, search_query = read_data()
     data = [item[2:] for item in feature]
     centroids, assignments = k_means_clust(data, num_clust, num_iter, w)
 
     distribution = {}
 
-    for key in assignments:
-        distribution[key] = {}
-        # print key, assignments[key]
-        for user in assignments[key]:
-            if feature[user][1] in distribution[key]:
-                distribution[key][int(feature[user][1])] += 1
-            else:
-                distribution[key][int(feature[user][1])] = 1
+    # for key in assignments:
+    #     distribution[key] = {}
+    #     # print key, assignments[key]
+    #     for user in assignments[key]:
+    #         if feature[user][1] in distribution[key]:
+    #             distribution[key][int(feature[user][1])] += 1
+    #         else:
+    #             distribution[key][int(feature[user][1])] = 1
 
-    for key in distribution:
-        print "cluster id ", key
-        for category in distribution[key]:
-            print category, distribution[key][category]
-        print "\n\n"
+    for cluster in assignments:
+        distribution[cluster] = []
+        for user in assignments[cluster]:
+            distribution[cluster].append(feature[user][1])
+
+    count = 0
+    for cluster in distribution:
+        plt.hist(distribution[cluster], normed=True, bins=100)
+        plt.savefig("histogram_" + str(count) + ".png")
+        plt.clf()
+        count += 1
+
+    # for key in distribution:
+    #     print "cluster id ", key
+    #     for category in distribution[key]:
+    #         print category, distribution[key][category]
+    #     print "\n\n"
 
     for key in assignments:
         for i in assignments[key]:
@@ -159,29 +172,35 @@ def cluster(num_clust, num_iter, w=5):
 
 
 def read_data():
+    path = project_folder + "code/cluster_data/"
     feature = []
-    temp = np.genfromtxt('feature_vectors.csv', delimiter=',')
+    temp = np.genfromtxt(path + 'feature_vectors.csv', delimiter=',')
     for value in temp:
         feature.append(value)
 
     duration = []
-    temp = np.genfromtxt('duration_vectors.csv', delimiter=',')
+    temp = np.genfromtxt(path + 'duration_vectors.csv', delimiter=',')
     for value in temp:
         duration.append(value)
 
     mmtoc = []
-    temp = np.genfromtxt('mmtoc_vectors.csv', delimiter=',')
+    temp = np.genfromtxt(path + 'mmtoc_vectors.csv', delimiter=',')
     for value in temp:
         mmtoc.append(value)
 
     phrasecloud = []
-    temp = np.genfromtxt('phrasecloud_vectors.csv', delimiter=',')
+    temp = np.genfromtxt(path + 'phrasecloud_vectors.csv', delimiter=',')
     for value in temp:
         phrasecloud.append(value)
 
-    return feature, duration, mmtoc, phrasecloud
+    search_query = []
+    temp = np.genfromtxt(path + 'search_query_vectors.csv', delimiter=',')
+    for value in temp:
+        search_query.append(value)
+
+    return feature, duration, mmtoc, phrasecloud, search_query
 
     # cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
 
 # read_data()
-cluster(4, 500, 3)
+cluster(3, 20, 3)

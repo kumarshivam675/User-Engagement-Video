@@ -6,10 +6,12 @@ import extract_ground_truth
 sys.path.insert(0, project_folder + 'code/extract_duration')
 sys.path.insert(0, project_folder + 'code/extract_phrasecloud')
 sys.path.insert(0, project_folder + 'code/extract_mmtoc')
+sys.path.insert(0, project_folder + 'code/extract_query')
 
 import duration_ver3
 import phrasecloud
 import mmtoc
+import query
 
 
 def sort_values_on_keys(dictionary):
@@ -37,8 +39,8 @@ def multiply_scalar_vector(wt, vec):
     return [i * wt for i in vec]
 
 
-def add_lists(l1, l2, l3):
-    return map(sum, zip(l1, l2, l3))
+def add_lists(l1, l2, l3, l4):
+    return map(sum, zip(l1, l2, l3, l4))
 
 
 def save(email, user_cluster, data, filename):
@@ -53,14 +55,16 @@ def save(email, user_cluster, data, filename):
         print "key error", email
 
 
-def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
+def combine_vectors(mmtoc_wt, phrase_wt, duration_wt, query_wt):
+    path = project_folder + "code/cluster_data/"
     mmtoc_dict = mmtoc.extract_mmtoc_clicks()
     phrasecloud_dict = phrasecloud.extract_phrasecloud_clicks()
     duration_dict = duration_ver3.create_video_log()
+    query_dict = query.extract_query_clicks()
     user_cluster = extract_ground_truth.ground_truth()
     count = 0
 
-    print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(user_cluster)
+    print len(mmtoc_dict), len(phrasecloud_dict), len(duration_dict), len(query_dict), len(user_cluster)
 
     for user in phrasecloud_dict:
         count += 1
@@ -68,24 +72,27 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
         mmtoc_vector = extract_vectors(mmtoc_dict[user])
         phrasecloud_vector = extract_vectors(phrasecloud_dict[user])
         duration_vector = extract_vectors(duration_dict[user])
+        search_query_vector = extract_vectors(query_dict[user])
 
         # print "vector extraction done"
 
         weighted_f1 = multiply_scalar_vector(mmtoc_wt, mmtoc_vector)
         weighted_f2 = multiply_scalar_vector(phrase_wt, phrasecloud_vector)
         weighted_f3 = multiply_scalar_vector(duration_wt, duration_vector)
+        weighted_f4 = multiply_scalar_vector(query_wt, search_query_vector)
 
         # print "vector multiplication done"
 
-        feature_vector = add_lists(weighted_f1, weighted_f2, weighted_f3)
+        feature_vector = add_lists(weighted_f1, weighted_f2, weighted_f3, weighted_f4)
 
         # print "beginning to save in the csv"
-        save(user, user_cluster, feature_vector, "feature_vectors.csv")
+        save(user, user_cluster, feature_vector, path + "feature_vectors.csv")
 
-        save(user, user_cluster, multiply_scalar_vector(1, mmtoc_vector), "mmtoc_vectors.csv")
-        save(user, user_cluster, multiply_scalar_vector(1, duration_vector), "duration_vectors.csv")
-        save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), "phrasecloud_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, mmtoc_vector), path + "mmtoc_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, duration_vector), path + "duration_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), path + "phrasecloud_vectors.csv")
+        save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), path + "search_query_vectors.csv")
 
 
-combine_vectors(0.2, 0.2, 0.6)
+combine_vectors(0, 0, 1, 0)
 

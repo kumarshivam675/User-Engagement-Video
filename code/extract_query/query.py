@@ -60,7 +60,7 @@ def extract_query_clicks():
 def queryplot_behaviour():
     query_clicks = extract_query_clicks()
 
-    for user in mmtoc_clicks:
+    for user in query_clicks:
         keys = query_clicks[user].keys()
         values = query_clicks[user].values()
         Z1 = sorted(keys)
@@ -69,4 +69,4 @@ def queryplot_behaviour():
     plt.savefig("query.png")
     plt.show()
 
-queryplot_behaviour()
+# queryplot_behaviour()
