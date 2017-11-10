@@ -153,7 +153,7 @@ for epoch in range(100):
         end1 = start1 + 1
         error += sess.run(model.error, {data: X, target: temp, seqlen: L})
     print("Error: ", error)
-    print('Epoch {:2d} error {:3.1f}%'.format(epoch, ((error) *100) / 144))
+    print('Epoch {:2d} error {:3.1f}%'.format(epoch, ((error) *100) / 194))
 
 
 
