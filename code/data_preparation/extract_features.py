@@ -4,7 +4,7 @@ import savetocsv
 import os
 from config import project_folder
 
-path = project_folder + "code/result/"
+path = project_folder + "logdumps_organisationX/"
 
 for file in os.listdir(path):
     with open(path + file, 'r') as data_file:

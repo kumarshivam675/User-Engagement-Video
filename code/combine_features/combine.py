@@ -87,5 +87,5 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt):
         save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), "phrasecloud_vectors.csv")
 
 
-combine_vectors(0.1, 0.2, 0.6)
+combine_vectors(0.2, 0.2, 0.6)
 
