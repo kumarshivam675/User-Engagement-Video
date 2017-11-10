@@ -5,7 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 from config import project_folder
 
-path = project_folder + "code/singleuser_analysis/"
+path = project_folder + "code/Preliminary_Single_User_Expts/"
 # path = '/home/shivam/coursework/user engagement/User-Engagement-Video/code/'
 # file = 'result_fb62884cc3fa8a4bfb36535fa628acff22830025acb5ebe31e1ef5ef.json'
 
