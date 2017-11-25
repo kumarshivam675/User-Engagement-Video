@@ -17,14 +17,16 @@ def extract_week_number(raw_date):
     wk = dt.isocalendar()[1]
     return wk
 
+
 def create_query_dictionary(min_week, max_week):
     query_searches = {}
     for i in range(min_week, max_week + 1):
         query_searches[i] = 0.0
     return query_searches
 
+
 def extract_login_clicks():
-    print "query"
+    print "login"
     user_log = {}
 
     count = 0
@@ -62,7 +64,7 @@ def extract_login_clicks():
 
 
 def queryplot_behaviour():
-    query_clicks = extract_query_clicks()
+    query_clicks = extract_login_clicks()
 
     for user in query_clicks:
         keys = query_clicks[user].keys()

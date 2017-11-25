@@ -95,7 +95,7 @@ def bin_based_on_score(score):
         return 2
 
 
-def plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query):
+def plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query, login):
     for key in assignments:
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
@@ -121,6 +121,18 @@ def plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasec
         plt.savefig("./cluster_visualization/phrasecloud_" + str(key) + ".png")
         plt.clf()
 
+        for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(search_query[i][2:])
+        plt.savefig("./cluster_visualization/search_query_" + str(key) + ".png")
+        plt.clf()
+
+        for i in assignments[key]:
+            plt.title('No of user: %.2f' % (len(assignments[key])))
+            plt.plot(login[i][2:])
+        plt.savefig("./cluster_visualization/login_" + str(key) + ".png")
+        plt.clf()
+
     for i in centroids:
         plt.plot(i)
 
@@ -134,11 +146,11 @@ def add_lists(l1, l2):
 
 
 def multiply_scalar_vector(wt, vec):
-    return [i * wt for i in vec]
+    return [float(i) / float(wt) for i in vec]
 
 
 def cluster(num_clust, num_iter, w=5):
-    feature, duration, mmtoc, phrasecloud, search_query = read_data()
+    feature, duration, mmtoc, phrasecloud, search_query, login = read_data()
     data = [item[2:] for item in feature]
     centroids, assignments = k_means_clust(data, num_clust, num_iter, w)
 
@@ -166,7 +178,7 @@ def cluster(num_clust, num_iter, w=5):
         for i in range(1, len(assignments[key])):
             lst = add_lists(lst, phrasecloud[assignments[key][i]][2:])
 
-        lst = multiply_scalar_vector(0.5, lst)
+        lst = multiply_scalar_vector(len(assignments[key]), lst)
         plt.plot(lst)
     plt.savefig("./centroids/phrasecloud.png")
     plt.clf()
@@ -176,7 +188,7 @@ def cluster(num_clust, num_iter, w=5):
         for i in range(1, len(assignments[key])):
             lst = add_lists(lst, mmtoc[assignments[key][i]][2:])
 
-        lst = multiply_scalar_vector(0.5, lst)
+        lst = multiply_scalar_vector(len(assignments[key]), lst)
         plt.plot(lst)
     plt.savefig("./centroids/mmtoc.png")
     plt.clf()
@@ -186,12 +198,22 @@ def cluster(num_clust, num_iter, w=5):
         for i in range(1, len(assignments[key])):
             lst = add_lists(lst, search_query[assignments[key][i]][2:])
 
-        lst = multiply_scalar_vector(0.5, lst)
+        lst = multiply_scalar_vector(len(assignments[key]), lst)
         plt.plot(lst)
     plt.savefig("./centroids/searchquery.png")
     plt.clf()
 
-    # plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query)
+    for key in assignments:
+        lst = login[assignments[key][0]][2:]
+        for i in range(1, len(assignments[key])):
+            lst = add_lists(lst, login[assignments[key][i]][2:])
+
+        lst = multiply_scalar_vector(len(assignments[key]), lst)
+        plt.plot(lst)
+    plt.savefig("./centroids/login.png")
+    plt.clf()
+
+    plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query, login)
 
 
 def read_data():
@@ -221,9 +243,14 @@ def read_data():
     for value in temp:
         search_query.append(value)
 
-    return feature, duration, mmtoc, phrasecloud, search_query
+    login = []
+    temp = np.genfromtxt(path + 'login_vectors.csv', delimiter=',')
+    for value in temp:
+        login.append(value)
+
+    return feature, duration, mmtoc, phrasecloud, search_query, login
 
     # cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
 
 # read_data()
-cluster(3, 100, 3)
+cluster(3, 10, 3)
