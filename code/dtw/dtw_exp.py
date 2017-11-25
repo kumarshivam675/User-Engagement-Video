@@ -104,6 +104,15 @@ def k_means_clust(data, num_clust, num_iter, w=5):
     return centroids, assignments
 
 
+def bin_based_on_score(score):
+    if score > 90.0:
+        return 0
+    if score > 10.0:
+        return 1
+    else:
+        return 2
+
+
 def cluster(num_clust, num_iter, w=5):
     feature, duration, mmtoc, phrasecloud, search_query = read_data()
     data = [item[2:] for item in feature]
@@ -111,32 +120,34 @@ def cluster(num_clust, num_iter, w=5):
 
     distribution = {}
 
-    # for key in assignments:
-    #     distribution[key] = {}
-    #     # print key, assignments[key]
-    #     for user in assignments[key]:
-    #         if feature[user][1] in distribution[key]:
-    #             distribution[key][int(feature[user][1])] += 1
-    #         else:
-    #             distribution[key][int(feature[user][1])] = 1
+    for key in assignments:
+        distribution[key] = {}
+        # print key, assignments[key]
+        for user in assignments[key]:
+            bin = bin_based_on_score(feature[user][1])
+            print bin
+            if bin in distribution[key]:
+                distribution[key][bin] += 1
+            else:
+                distribution[key][bin] = 1
 
-    for cluster in assignments:
-        distribution[cluster] = []
-        for user in assignments[cluster]:
-            distribution[cluster].append(feature[user][1])
+    # for cluster in assignments:
+    #     distribution[cluster] = []
+    #     for user in assignments[cluster]:
+    #         distribution[cluster].append(feature[user][1])
+    #
+    # count = 0
+    # for cluster in distribution:
+    #     plt.hist(distribution[cluster], normed=True, bins=100)
+    #     plt.savefig("histogram_" + str(count) + ".png")
+    #     plt.clf()
+    #     count += 1
 
-    count = 0
-    for cluster in distribution:
-        plt.hist(distribution[cluster], normed=True, bins=100)
-        plt.savefig("histogram_" + str(count) + ".png")
-        plt.clf()
-        count += 1
-
-    # for key in distribution:
-    #     print "cluster id ", key
-    #     for category in distribution[key]:
-    #         print category, distribution[key][category]
-    #     print "\n\n"
+    for key in distribution:
+        print "cluster id ", key
+        for category in distribution[key]:
+            print category, distribution[key][category]
+        print "\n\n"
 
     for key in assignments:
         for i in assignments[key]:
@@ -203,4 +214,4 @@ def read_data():
     # cluster(feature, duration, mmtoc, phrasecloud, 3, 5, 3)
 
 # read_data()
-cluster(3, 20, 3)
+cluster(3, 100, 3)

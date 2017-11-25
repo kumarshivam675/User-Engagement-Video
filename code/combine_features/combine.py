@@ -94,5 +94,5 @@ def combine_vectors(mmtoc_wt, phrase_wt, duration_wt, query_wt):
         save(user, user_cluster, multiply_scalar_vector(1, phrasecloud_vector), path + "search_query_vectors.csv")
 
 
-combine_vectors(0, 0, 1, 0)
+combine_vectors(0.33, 0.33, 0, 0.33)
 
