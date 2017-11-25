@@ -27,24 +27,6 @@ def DTWDistance(s1, s2):
     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
 
 
-# def DTWDistance(s1, s2, w):
-#     DTW={}
-#
-#     w = max(w, abs(len(s1)-len(s2)))
-#
-#     for i in range(-1,len(s1)):
-#         for j in range(-1,len(s2)):
-#             DTW[(i, j)] = float('inf')
-#     DTW[(-1, -1)] = 0
-#
-#     for i in range(len(s1)):
-#         for j in range(max(0, i-w), min(len(s2), i+w)):
-#             dist= (s1[i]-s2[j])**2
-#             DTW[(i, j)] = dist + min(DTW[(i-1, j)],DTW[(i, j-1)], DTW[(i-1, j-1)])
-#
-#     return math.sqrt(DTW[len(s1)-1, len(s2)-1])
-
-
 def LB_Keogh(s1,s2,r):
     LB_sum=0
     for ind,i in enumerate(s1):
@@ -113,42 +95,7 @@ def bin_based_on_score(score):
         return 2
 
 
-def cluster(num_clust, num_iter, w=5):
-    feature, duration, mmtoc, phrasecloud, search_query = read_data()
-    data = [item[2:] for item in feature]
-    centroids, assignments = k_means_clust(data, num_clust, num_iter, w)
-
-    distribution = {}
-
-    for key in assignments:
-        distribution[key] = {}
-        # print key, assignments[key]
-        for user in assignments[key]:
-            bin = bin_based_on_score(feature[user][1])
-            print bin
-            if bin in distribution[key]:
-                distribution[key][bin] += 1
-            else:
-                distribution[key][bin] = 1
-
-    # for cluster in assignments:
-    #     distribution[cluster] = []
-    #     for user in assignments[cluster]:
-    #         distribution[cluster].append(feature[user][1])
-    #
-    # count = 0
-    # for cluster in distribution:
-    #     plt.hist(distribution[cluster], normed=True, bins=100)
-    #     plt.savefig("histogram_" + str(count) + ".png")
-    #     plt.clf()
-    #     count += 1
-
-    for key in distribution:
-        print "cluster id ", key
-        for category in distribution[key]:
-            print category, distribution[key][category]
-        print "\n\n"
-
+def plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query):
     for key in assignments:
         for i in assignments[key]:
             plt.title('No of user: %.2f' % (len(assignments[key])))
@@ -180,6 +127,71 @@ def cluster(num_clust, num_iter, w=5):
     plt.savefig("cluster_centroid.png")
     # plt.show()
     plt.clf()
+
+
+def add_lists(l1, l2):
+    return map(sum, zip(l1, l2))
+
+
+def multiply_scalar_vector(wt, vec):
+    return [i * wt for i in vec]
+
+
+def cluster(num_clust, num_iter, w=5):
+    feature, duration, mmtoc, phrasecloud, search_query = read_data()
+    data = [item[2:] for item in feature]
+    centroids, assignments = k_means_clust(data, num_clust, num_iter, w)
+
+    distribution = {}
+
+    for key in assignments:
+        distribution[key] = {}
+        # print key, assignments[key]
+        for user in assignments[key]:
+            bin = bin_based_on_score(feature[user][1])
+            # print bin
+            if bin in distribution[key]:
+                distribution[key][bin] += 1
+            else:
+                distribution[key][bin] = 1
+
+    # for key in distribution:
+    #     print "cluster id ", key
+    #     for category in distribution[key]:
+    #         print category, distribution[key][category]
+    #     print "\n\n"
+
+    for key in assignments:
+        lst = phrasecloud[assignments[key][0]][2:]
+        for i in range(1, len(assignments[key])):
+            lst = add_lists(lst, phrasecloud[assignments[key][i]][2:])
+
+        lst = multiply_scalar_vector(0.5, lst)
+        plt.plot(lst)
+    plt.savefig("./centroids/phrasecloud.png")
+    plt.clf()
+
+    for key in assignments:
+        lst = mmtoc[assignments[key][0]][2:]
+        for i in range(1, len(assignments[key])):
+            lst = add_lists(lst, mmtoc[assignments[key][i]][2:])
+
+        lst = multiply_scalar_vector(0.5, lst)
+        plt.plot(lst)
+    plt.savefig("./centroids/mmtoc.png")
+    plt.clf()
+
+    for key in assignments:
+        lst = search_query[assignments[key][0]][2:]
+        for i in range(1, len(assignments[key])):
+            lst = add_lists(lst, search_query[assignments[key][i]][2:])
+
+        lst = multiply_scalar_vector(0.5, lst)
+        plt.plot(lst)
+    plt.savefig("./centroids/searchquery.png")
+    plt.clf()
+
+    # plot_visualization(centroids, assignments, feature, duration, mmtoc, phrasecloud, search_query)
 
 
 def read_data():
